@@ -1,0 +1,39 @@
+/* variables.css - Global Design Tokens */
+
+:root {
+  /* Colors */
+  --color-primary: #ff5024;
+  --color-accent: #ff8d28;
+  --color-warm-100: #ffe9c5;
+  --color-warm-200: #c95d10;
+
+  /* Neutrals */
+  --neutral-200: #e0e0e1;
+  --neutral-300: #eaeaea;
+  --neutral-500: #252525;
+  --neutral-600: #1e1e1e;
+
+  /* Typography */
+  --font-sans: var(--font-figtree), var(--font-inter), "Figtree", "Inter",
+    -apple-system, sans-serif;
+
+  /* Spacing */
+  --space-xs: 8px;
+  --space-sm: 12px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+
+  /* Radii */
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-pill: 100px;
+
+  /* Shadows */
+  --shadow-xs: 0px 2px 4px rgba(31, 30, 130, 0.04);
+  --shadow-md: 0px 16px 32px -12px rgba(31, 30, 130, 0.1);
+
+  /* Layout */
+  --container-max-width: 1300px;
+}

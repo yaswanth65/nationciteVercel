@@ -1,0 +1,66 @@
+* {
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+}
+
+.head-or {
+
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -4%;
+    color: #ff8d28;
+    padding-bottom: 60px;
+}
+
+.sub-head {
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 56px;
+    letter-spacing: -4px;
+    vertical-align: middle;
+    color: #000000;
+}
+
+.para-graph {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -4%;
+    color: #5d5d65;
+    padding-top: 20px;
+}
+
+.title-footer {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: -5%;
+    color: #000000;
+}
+
+.mar-top {
+    margin-top: 150px;
+}
+
+.top-mar {
+    padding-top: 50px;
+}
+
+.wid {
+    min-width: 626px;
+}
+
+.mar-left {
+    margin-left: 58px;
+}
+
+.input-main::placeholder {
+    color: #5c5c5c;
+    opacity: 1;
+}
+
+.img-martop {
+    margin-top: 30px;
+
+}

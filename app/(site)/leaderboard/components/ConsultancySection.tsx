@@ -26,7 +26,7 @@ export default function ConsultancySection() {
 
         <div className="mb-8">
           <span className="bg-[#FFF5EB] text-[#FF7A00] px-4 py-1 rounded-full text-xs font-medium border border-[#FFD6B3]">
-            CTA Goes Here
+            CTA 
           </span>
         </div>
 

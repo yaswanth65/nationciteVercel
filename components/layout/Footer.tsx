@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-12">
           <div className="md:col-span-1">
             <div className="flex items-center gap-2 text-xl font-bold mb-6">
-              <span className="text-2xl text-[#FF5024]">✱</span>
+              <span className="text-2xl text-[#F76A23]">✱</span>
               <span>NATIONCITE</span>
             </div>
             <div className="flex flex-col gap-3">
@@ -122,7 +122,7 @@ export default function Footer() {
                 href="https://linkedin.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-[#FF5024] transition-all hover:-translate-y-1"
+                className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-[#F76A23] transition-all hover:-translate-y-1"
                 aria-label="LinkedIn"
               >
                 <svg
@@ -138,7 +138,7 @@ export default function Footer() {
                 href="https://twitter.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-[#FF5024] transition-all hover:-translate-y-1"
+                className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-[#F76A23] transition-all hover:-translate-y-1"
                 aria-label="Twitter"
               >
                 <svg
@@ -154,7 +154,7 @@ export default function Footer() {
                 href="https://facebook.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-[#FF5024] transition-all hover:-translate-y-1"
+                className="w-10 h-10 flex items-center justify-center bg-gray-800 rounded-lg hover:bg-[#F76A23] transition-all hover:-translate-y-1"
                 aria-label="Facebook"
               >
                 <svg

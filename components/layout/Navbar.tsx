@@ -28,7 +28,7 @@ export default function Navbar() {
             href="/"
             className="flex items-center gap-2 text-gray-900 font-bold text-xl hover:opacity-80 transition-opacity"
           >
-            <span className="text-2xl text-[#FF5024]">✱</span>
+            <span className="text-2xl text-[#F76A23]">✱</span>
             <span>NATIONCITE</span>
           </Link>
 
@@ -85,6 +85,12 @@ export default function Navbar() {
                 className="text-neutral-900 font-medium text-lg tracking-normal"
               >
                 Blogs
+              </Link>
+              <Link
+                href="/about"
+                className="text-neutral-900 font-medium text-lg tracking-normal"
+              >
+                About
               </Link>
             </div>
 

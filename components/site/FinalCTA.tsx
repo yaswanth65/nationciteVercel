@@ -23,10 +23,10 @@ export default function FinalCTA() {
 
       <div className="flex py-3 flex-col md:flex-row gap-4">
         <button className="bg-[#FF7A00] text-white px-8 py-4 rounded-full font-medium text-lg hover:bg-[#e66e00] transition-colors shadow-lg shadow-orange-200">
-          Claim Your Profile
-        </button>
+        CTA
+         </button>
         <button className="bg-[#1E1E1E] text-white px-8 py-4 rounded-full font-medium text-lg hover:bg-black transition-colors">
-          Request Institution Dashboard
+        CTA
         </button>
       </div>
     </section>

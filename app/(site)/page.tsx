@@ -13,18 +13,21 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-white font-sans">
       {/* Hero Section */}
-      <section className="relative bg-linear-to-b from-[#FFF5EE] via-[#FFE4C8] to-[#f8f7f7] pt-16 pb-32 flex flex-col items-center w-full px-4 md:px-[108px] overflow-hidden">
-        <div className="w-full flex flex-col items-center gap-6 z-10">
-          <div className="flex flex-col items-center mt-10 gap-6 w-full text-center mb-12">
-            <h1 className="text-[#1E1E1E] max-w-[900px] mb-3">
+      <section className="relative bg-linear-to-b from-[#FFF5EE] via-[#FFE4C8] to-[#f8f7f7] pt-16 pb-32 w-full overflow-hidden">
+        {/* <-- IMPORTANT: 72px gutters left & right --> */}
+        <div className="w-full px-[72px] flex flex-col gap-6 z-10">
+          <div className="flex flex-col mt-10 gap-6 w-full text-center mb-12">
+            <h1 className="text-[#1E1E1E] mb-3">
               India's H-Index
               <br />
               Leaderboard Portal
             </h1>
 
-            <p className="text-large text-[#5C5C5C] max-w-[724px] mb-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <p className="p1 text-[#5C5C5C] mb-2">
+              NationCite is India’s national research visibility and H-Index
+              analytics platform bringing transparent rankings, <br /> verified
+              researcher profiles, and institution-level intelligence powered by
+              open and licensed global data sources.
             </p>
 
             <div className="flex flex-wrap justify-center gap-4 mt-2">
@@ -36,7 +39,7 @@ export default function HomePage() {
               </button>
             </div>
 
-            <div className="flex items-center gap-3 mt-4 bg-white px-4 py-1 rounded-full border border-white/60">
+            <div className="flex items-center justify-center gap-3 mt-4  px-4 py-1  border-white/60 w-fit mx-auto">
               <div className="flex -space-x-2">
                 {[1, 2, 3].map((i) => (
                   <div
@@ -51,19 +54,19 @@ export default function HomePage() {
                   </div>
                 ))}
               </div>
-              <span className="text-sm text-[#1E1E1E] font-medium">
+              <span className="text-m text-[#1E1E1E] font-medium">
                 Lorem ipsum dolor sit amet consectetur
               </span>
             </div>
           </div>
 
           {/* Leaderboard Widget */}
-          <div className="w-full max-w-[1200px] flex flex-col gap-4">
+          <div className="w-full flex flex-col gap-4">
             <LeaderboardWidget />
           </div>
         </div>
       </section>
-     
+
       <TrustedBy />
       <UnderstandingHIndex />
       <TransparencySection />

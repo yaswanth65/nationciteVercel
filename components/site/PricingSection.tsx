@@ -10,7 +10,8 @@ export default function PricingSection() {
       price: "₹999",
       description: "Build credibility. Track your research impact.",
       btnText: "Get Verified",
-      btnStyle: "bg-white border border-gray-200 text-[#FF7A00] hover:bg-gray-50",
+      btnStyle:
+        "bg-white border border-gray-200 text-[#FF7A00] hover:bg-gray-50",
       highlight: false,
       features: [
         "Citation & rank trend tracking",
@@ -26,7 +27,8 @@ export default function PricingSection() {
       price: "₹999",
       description: "Build credibility. Track your research impact.",
       btnText: "Request Access",
-      btnStyle: "bg-[#FF9534] border border-[#FF9534] text-white hover:bg-[#E6862D] shadow-md",
+      btnStyle:
+        "bg-[#FF9534] border border-[#FF9534] text-white hover:bg-[#E6862D] shadow-md",
       highlight: true,
       features: [
         "Citation & rank trend tracking",
@@ -42,7 +44,8 @@ export default function PricingSection() {
       price: "₹999",
       description: "Build credibility. Track your research impact.",
       btnText: "Contact Sales",
-      btnStyle: "bg-white border border-gray-200 text-[#FF7A00] hover:bg-gray-50",
+      btnStyle:
+        "bg-white border border-gray-200 text-[#FF7A00] hover:bg-gray-50",
       highlight: false,
       features: [
         "Citation & rank trend tracking",
@@ -56,13 +59,11 @@ export default function PricingSection() {
   ];
 
   return (
-    <section className="w-full py-20 bg-white min-h-screen font-sans">
-      <div className="max-w-[1200px] mx-auto px-4 md:px-8">
+    <section className="w-full py-20 bg-white min-h-screen font-sans px-[76px]">
+      <div className="w-full">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-medium text-[#111111] mb-8 tracking-tight">
-            Upgrade your plan
-          </h2>
+          <h3 className="text-[#111111] mb-8">Upgrade your plan</h3>
 
           {/* Toggle Switch */}
           <div className="flex justify-center">
@@ -108,18 +109,18 @@ export default function PricingSection() {
                   plan.highlight ? "bg-[#FFF5EB]" : "bg-[#F9FAFB]"
                 }`}
               >
-                <h4 className="font-bold text-[#111111] text-lg mb-4">
-                  {plan.title}
-                </h4>
-                
+                <h4 className="text-[#111111] mb-4">{plan.title}</h4>
+
                 <div className="flex items-baseline gap-1 mb-4">
                   <span className="text-4xl font-bold text-[#111111]">
                     {plan.price}
                   </span>
-                  <span className="text-gray-500 font-normal text-lg">/ year</span>
+                  <span className="text-gray-500 font-normal text-lg">
+                    / year
+                  </span>
                 </div>
 
-                <p className="text-[#5C5C5C] text-sm leading-relaxed mb-8">
+                <p className="p3 pb-3 text-[#5C5C5C] mb-8">
                   {plan.description}
                 </p>
 
@@ -141,7 +142,10 @@ export default function PricingSection() {
                       <div key={j} className="flex items-start gap-3">
                         <div className="flex-shrink-0 mt-0.5">
                           <div className="w-5 h-5 rounded-full bg-[#FFF0E0] flex items-center justify-center">
-                            <Check className="w-3.5 h-3.5 text-[#FF7A00]" strokeWidth={3} />
+                            <Check
+                              className="w-3.5 h-3.5 text-[#FF7A00]"
+                              strokeWidth={3}
+                            />
                           </div>
                         </div>
                         <span className="text-[15px] text-[#111111] leading-tight">

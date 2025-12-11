@@ -1,56 +1,123 @@
-import React from "react";
+"use client";
 
-export default function FAQSection() {
+import React, { useState } from "react";
+
+export type FAQItem = { title: string; desc?: string };
+
+export default function FAQSection({
+  title = "Everything You Need to Know About Us",
+  kicker = "Know Nationcite",
+  questions = [
+    "How does NationCite ensure project quality?",
+    "What industries do you specialize in?",
+    "Can you handle enterprise-scale infrastructure?",
+    "What is your engagement model?",
+    "How do you handle data security?",
+  ],
+  children,
+}: {
+  title?: string;
+  kicker?: string;
+  questions?: string[];
+  children?: React.ReactNode;
+}) {
+  const [openFaqIndex, setOpenFaqIndex] = useState(0);
+
+  const toggleFaq = (index: number) => {
+    setOpenFaqIndex(openFaqIndex === index ? -1 : index);
+  };
+
   return (
-    <section className="w-full py-20 bg-white px-4 md:px-[108px]">
-      <div className="max-w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
-        <div>
-          <span className="text-[#FF7A00] font-medium mb-3 block">
-            Lorem ipsum
-          </span>
-          <h2 className="text-[#1E1E1E] leading-tight mb-6">
-            Lorem ipsum dolor self amet consectetyr alit
-          </h2>
-          <p className="text-large text-[#5C5C5C] max-w-md">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
+    <section className="w-full px-[76px] py-24 grid md:grid-cols-2 gap-16">
+      <div>
+        <span className="text-[#F76A23] font-bold mb-4 block text-sm uppercase tracking-wider">
+          {kicker}
+        </span>
+        <h3 className="mb-6">{title}</h3>
+        <p className="p1 text-[#5C5C5C] max-w-md">
+          {children ?? (
+            <>
+              This section answers the most common questions about Nationcite —
+              who we are, how we operate, and what makes our company different
+              in the digital ecosystem.
+            </>
+          )}
+        </p>
+      </div>
 
-        <div className="flex flex-col gap-4">
-          {[...Array(5)].map((_, i) => (
-            <div
-              key={i}
-              className="border border-[#E0E0E1] rounded-lg overflow-hidden"
+      <div className="space-y-0">
+        {questions.map((question, i) => (
+          <div key={i} className="border-b border-gray-200">
+            <button
+              onClick={() => toggleFaq(i)}
+              className="flex justify-between items-center w-full py-6 text-left focus:outline-none"
             >
-              <button className="w-full flex items-center justify-between p-4 text-left bg-white hover:bg-gray-50 transition-colors">
-                <span className="font-medium text-[#1E1E1E] text-sm">
-                  Lorem ipsum dolor self amet, consectetur
-                </span>
-                <span className="text-gray-400 text-xl font-light">
-                  {i === 0 ? "−" : "+"}
-                </span>
-              </button>
-              {i === 0 && (
-                <div className="p-4 pt-0 bg-[#F5F5F5] text-sm text-[#5C5C5C] leading-relaxed border-t border-[#E0E0E1]">
-                  <br />
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                  <br />
+              <span
+                className={`font-medium text-lg transition-colors ${
+                  openFaqIndex === i ? "text-[#F76A23]" : "text-neutral-900"
+                }`}
+              >
+                {question}
+              </span>
+              <span className="text-2xl font-light text-gray-400">
+                {openFaqIndex === i ? (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    strokeWidth={2}
+                    stroke="currentColor"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M18 15l-6-6-6 6" />
+                  </svg>
+                ) : (
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    strokeWidth={2}
+                    stroke="currentColor"
+                    fill="none"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <path d="M12 5v14" />
+                    <path d="M5 12h14" />
+                  </svg>
+                )}
+              </span>
+            </button>
+            <div
+              className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                openFaqIndex === i
+                  ? "max-h-96 opacity-100 pb-6"
+                  : "max-h-0 opacity-0"
+              }`}
+            >
+              <div className="text-[#5C5C5C] leading-relaxed">
+                <div className="bg-gray-50 p-6 rounded-lg border border-gray-100">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam.
+                  </p>
                   <br />
                   <a
                     href="#"
-                    className="text-[#FF7A00] underline decoration-[#FF7A00]"
+                    className="text-[#F76A23] font-medium hover:underline flex items-center gap-1"
                   >
                     Learn More
                   </a>
                 </div>
-              )}
+              </div>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
     </section>
   );

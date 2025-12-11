@@ -36,9 +36,7 @@ export default function ArticleCard({
       )}
 
       <div className="flex flex-col grow px-2">
-        <h4 className="h4-medium font-bold text-gray-900 mb-3 transition-colors">
-          {title}
-        </h4>
+        <h4 className="text-gray-900 mb-3 transition-colors">{title}</h4>
 
         <div className="flex items-center gap-3 text-xs font-bold tracking-wider text-gray-400 uppercase mb-4">
           <span className="text-indigo-600">{category}</span>
@@ -46,9 +44,7 @@ export default function ArticleCard({
           <span>{date}</span>
         </div>
 
-        <p className="text-base text-gray-500 leading-relaxed mb-4">
-          {description}
-        </p>
+        <p className="p2 text-gray-500 mb-4">{description}</p>
       </div>
     </article>
   );

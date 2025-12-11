@@ -5,28 +5,23 @@ import Link from "next/link";
 const items = [
   {
     title: "Lorem ipsum dolor self amet, consectetur",
-    body:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
   {
     title: "Lorem ipsum dolor self amet, consectetur",
-    body:
-      "Second item content goes here. You can change this later.",
+    body: "Second item content goes here. You can change this later.",
   },
   {
     title: "Lorem ipsum dolor self amet, consectetur",
-    body:
-      "Third item content goes here. You can change this later.",
+    body: "Third item content goes here. You can change this later.",
   },
   {
     title: "Lorem ipsum dolor self amet, consectetur",
-    body:
-      "Fourth item content goes here. You can change this later.",
+    body: "Fourth item content goes here. You can change this later.",
   },
   {
     title: "Lorem ipsum dolor self amet, consectetur",
-    body:
-      "Fifth item content goes here. You can change this later.",
+    body: "Fifth item content goes here. You can change this later.",
   },
 ];
 export default function BlogPage() {
@@ -53,7 +48,7 @@ export default function BlogPage() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
 
-          <button className="inline-flex items-center justify-center rounded-full border border-gray-300 bg-white px-8 py-2.5 text-sm font-medium text-black shadow-sm hover:bg-gray-50 top-mar1">
+          <button className="inline-flex items-center justify-center rounded-xl border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-black shadow-sm hover:bg-gray-50 top-mar1">
             CTA Button
           </button>
         </section>
@@ -71,7 +66,9 @@ export default function BlogPage() {
               <article
                 key={i}
                 className="text-left text-sm text-gray-800 shadow-[0_8px_24px_rgba(0,0,0,0.06)] bg-white overflow-hidden"
-              >      <div className="w-full bg-[#f5f5f5]">
+              >
+                {" "}
+                <div className="w-full bg-[#f5f5f5]">
                   <img
                     src="/dummy/test.png"
                     alt=""
@@ -79,29 +76,24 @@ export default function BlogPage() {
                   />
                 </div>
                 <div className="px-4 py-4">
-                  <h3 className="mb-1 subtile">
-                    Lorem ipsum dolor slef amet
-                  </h3>
+                  <h3 className="mb-1 subtile">Lorem ipsum dolor slef amet</h3>
                   <p className="mb-2 text-xs text-gray-500 leading-snug">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
                   </p>
                   <Link href="/blog/example-post" className="footer">
                     Learn more about lorem ipsum &gt;
                   </Link>
-
                 </div>
               </article>
             ))}
           </div>
-
         </div>
       </section>
       <section className="w-full flex justify-center bg-white py-16">
         <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-[1.1fr_1fr] gap-0">
-          <div
-            className="min-h-[420px] bg-[url('/dummy/test.png')] bg-[length:40px_40px] bg-repeat flex items-start"
-          >
+          <div className="min-h-[420px] bg-[url('/dummy/test.png')] bg-[length:40px_40px] bg-repeat flex items-start">
             <div className="p-8">
               <p className="righttitle">
                 Lorem ipsum dolor
@@ -138,9 +130,7 @@ export default function BlogPage() {
 
       <section className="w-full flex justify-center bg-white">
         <div className="w-full max-w-5xl">
-          <h2 className="mb-6 title">
-            Lorem ipsum
-          </h2>
+          <h2 className="mb-6 title">Lorem ipsum</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {Array.from({ length: 6 }).map((_, i) => (
               <article
@@ -155,17 +145,15 @@ export default function BlogPage() {
                   />
                 </div>
                 <div className="px-4 py-4">
-                  <h3 className="mb-1 subtile">
-                    Lorem ipsum dolor slef amet
-                  </h3>
+                  <h3 className="mb-1 subtile">Lorem ipsum dolor slef amet</h3>
                   <p className="mb-2 text-xs text-gray-500 leading-snug">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
                   </p>
                   <Link href="/blog/example-post" className="footer">
                     Learn more about lorem ipsum &gt;
                   </Link>
-
                 </div>
               </article>
             ))}
@@ -193,8 +181,9 @@ export default function BlogPage() {
               return (
                 <div
                   key={index}
-                  className={`rounded-[14px] border border-gray-200 bg-white overflow-hidden ${isOpen ? "shadow-[0_8px_24px_rgba(0,0,0,0.06)]" : ""
-                    }`}
+                  className={`rounded-[14px] border border-gray-200 bg-white overflow-hidden ${
+                    isOpen ? "shadow-[0_8px_24px_rgba(0,0,0,0.06)]" : ""
+                  }`}
                 >
                   <button
                     type="button"
@@ -221,7 +210,6 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
-
     </>
   );
 }

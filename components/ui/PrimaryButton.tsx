@@ -20,8 +20,8 @@ export default function PrimaryButton({
 
   const sizeStyles = {
     sm: "px-4 py-2 text-sm",
-    md: "px-4 py-2 w-[174px] h-[52px] text-[18px]",
-    lg: "px-8 py-4 text-lg",
+    md: "px-4 py-2 text-base",
+    lg: "px-4 py-2 text-lg",
   };
 
   const variantStyles = {

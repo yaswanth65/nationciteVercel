@@ -20,16 +20,16 @@ const CheckerboardPattern = ({ className }: { className?: string }) => (
 
 export default function UnderstandingHIndex() {
   return (
-    <section className="w-full min-h-screen bg-white py-24 px-6 md:px-12 lg:px-24 font-sans selection:bg-gray-100">
-      <div className="max-w-6xl mx-auto">
+    <section className="w-full min-h-screen bg-white py-24 px-[76px] font-sans selection:bg-gray-100">
+      <div className="w-full">
         {/* Header Section */}
-        <div className="flex flex-col md:flex-row justify-between items-start mb-24 gap-10">
-          <h2 className="text-black max-w-2xl">
+        <div className="relative flex flex-col md:flex-row justify-between items-start md:items-end mb-24 gap-10">
+          <h3 className="text-black">
             Understanding the H-Index
             <br />
             The Backbone of Research Impact
-          </h2>
-          <p className="text-gray-500 text-sm md:text-base leading-relaxed max-w-xs md:pt-2">
+          </h3>
+          <p className="p2 text-gray-500 md:w-[40%] md:self-end md:-mt-3">
             The H-Index is more than a number. It reflects consistency,
             influence, and academic credibility. Here's what it truly represents
             and why it matters.
@@ -37,14 +37,12 @@ export default function UnderstandingHIndex() {
         </div>
 
         {/* Bento Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           {/* Item 1 - Full Width */}
-          <div className="md:col-span-2 bg-white rounded-4xl p-12 md:p-16 border border-gray-100 shadow-sm flex flex-col md:flex-row justify-between items-stretch gap-12 min-h-[500px] md:min-h-[450px]">
+          <div className="md:col-span-5 bg-white rounded-4xl p-12 md:p-16 border border-gray-100 shadow-sm flex flex-col md:flex-row justify-between items-stretch gap-12 min-h-[500px] md:min-h-[450px]">
             <div className="flex flex-col justify-center max-w-md">
-              <h3 className="h3-bento text-black mb-12">
-                What is the H-Index?
-              </h3>
-              <p className="text-base text-gray-600 leading-relaxed">
+              <h4 className="text-black mb-12">What is the H-Index?</h4>
+              <p className="p2 text-gray-600">
                 It measures both productivity and impact by balancing total
                 publications with citation performance.
               </p>
@@ -54,27 +52,25 @@ export default function UnderstandingHIndex() {
             </div>
           </div>
 
-          {/* Item 2 - Bottom Text */}
-          <div className="bg-white rounded-4xl p-12 md:p-14 border border-gray-100 shadow-sm flex flex-col justify-between min-h-[600px]">
+          {/* Item 2 - Bottom Text (60%) */}
+          <div className="md:col-span-3 bg-white rounded-4xl p-12 md:p-14 border border-gray-100 shadow-sm flex flex-col justify-between min-h-[600px]">
             <div className="flex flex-1 items-center justify-center mb-10">
               <CheckerboardPattern className="w-full h-full min-h-[250px] rounded-2xl" />
             </div>
             <div>
-              <h3 className="h3-bento text-black mb-8">Why H-Index Matters</h3>
-              <p className="text-base text-gray-600 leading-relaxed">
+              <h4 className="text-black mb-8">Why H-Index Matters</h4>
+              <p className="p2 text-gray-600">
                 It reflects sustained scholarly influence—not just one
                 successful paper.
               </p>
             </div>
           </div>
 
-          {/* Item 3 - Centered Alignment */}
-          <div className="bg-white rounded-4xl p-12 md:p-14 border border-gray-100 shadow-sm flex flex-col items-center justify-between text-center min-h-[600px]">
+          {/* Item 3 - Centered Alignment (40%) */}
+          <div className="md:col-span-2 bg-white rounded-4xl p-12 md:p-14 border border-gray-100 shadow-sm flex flex-col items-center justify-between text-center min-h-[600px]">
             <div className="flex-1 flex flex-col items-center justify-center">
-              <h3 className="h3-bento text-black mb-8">
-                Beyond Citation Counts
-              </h3>
-              <p className="text-base text-gray-600 leading-relaxed max-w-xs">
+              <h4 className="text-black mb-8">Beyond Citation Counts</h4>
+              <p className="p2 text-gray-600 max-w-xs">
                 Unlike raw citations, H-Index prevents inflation through a
                 single highly-cited work.
               </p>
@@ -84,13 +80,11 @@ export default function UnderstandingHIndex() {
             </div>
           </div>
 
-          {/* Item 4 - Left Aligned */}
-          <div className="bg-white rounded-4xl p-12 md:p-14 border border-gray-100 shadow-sm flex flex-col justify-between min-h-[600px]">
+          {/* Item 4 - Left Aligned (40%) */}
+          <div className="md:col-span-2 bg-white rounded-4xl p-12 md:p-14 border border-gray-100 shadow-sm flex flex-col justify-between min-h-[600px]">
             <div>
-              <h3 className="h3-bento text-black mb-8">
-                Institutional Benchmarking
-              </h3>
-              <p className="text-base text-gray-600 leading-relaxed max-w-xs">
+              <h4 className="text-black mb-8">Institutional Benchmarking</h4>
+              <p className="p2 text-gray-600 max-w-xs">
                 Helps universities assess research output and discipline
                 strengths.
               </p>
@@ -100,11 +94,11 @@ export default function UnderstandingHIndex() {
             </div>
           </div>
 
-          {/* Item 5 - Corner Image */}
-          <div className="bg-white rounded-4xl p-12 md:p-14 border border-gray-100 shadow-sm flex flex-col relative min-h-[600px] overflow-hidden">
+          {/* Item 5 - Corner Image (60%) */}
+          <div className="md:col-span-3 bg-white rounded-4xl p-12 md:p-14 border border-gray-100 shadow-sm flex flex-col relative min-h-[600px] overflow-hidden">
             <div className="relative z-10 max-w-[65%]">
-              <h3 className="h3-bento text-black mb-8">Academic Visibility</h3>
-              <p className="text-base text-gray-600 leading-relaxed">
+              <h4 className="text-black mb-8">Academic Visibility</h4>
+              <p className="p2 text-gray-600">
                 Higher H-index improves visibility in global research databases.
               </p>
             </div>

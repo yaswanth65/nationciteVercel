@@ -21,23 +21,23 @@ export default function FAQSection({
   questions?: string[];
   children?: React.ReactNode;
 }) {
-  const [openFaqIndex, setOpenFaqIndex] = useState(0);
+  const [openFaqIndex, setOpenFaqIndex] = useState(-1);
 
   const toggleFaq = (index: number) => {
     setOpenFaqIndex(openFaqIndex === index ? -1 : index);
   };
 
   return (
-    <section className="w-full px-[76px] py-24 grid md:grid-cols-2 gap-16">
+    <section className="w-full px-4 md:px-[76px] py-12 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
       <div>
         <span className="text-[#F76A23] font-bold mb-4 block text-sm uppercase tracking-wider">
           {kicker}
         </span>
-        <h3 className="mb-6">{title}</h3>
+        <h3 className="mb-6 text-2xl md:text-3xl">{title}</h3>
         <p className="p1 text-[#5C5C5C] max-w-md">
           {children ?? (
             <>
-              This section answers the most common questions about Nationcite —
+              This section answers the most common questions about Nationcite.
               who we are, how we operate, and what makes our company different
               in the digital ecosystem.
             </>

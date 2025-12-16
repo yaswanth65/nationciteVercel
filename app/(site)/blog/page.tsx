@@ -48,15 +48,15 @@ export default function BlogPage() {
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
 
-          <button className="inline-flex items-center justify-center rounded-xl border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-black shadow-sm hover:bg-gray-50 top-mar1">
+          <button className="inline-flex items-center justify-center rounded-xl border border-gray-300 bg-white px-4 py-2 text-sm font-medium text-black shadow-sm hover:bg-gray-50 mt-5">
             CTA Button
           </button>
         </section>
       </div>
 
       <section className="w-full flex justify-center bg-white">
-        <div className="w-full max-w-5xl">
-          <h2 className="mb-6 title">
+        <div className="w-full max-w-5xl px-4">
+          <h2 className="font-medium text-2xl md:text-[32px] leading-tight tracking-tight text-black mb-8">
             Lorem ipsum
             <br />
             dolor self amet
@@ -65,7 +65,7 @@ export default function BlogPage() {
             {Array.from({ length: 6 }).map((_, i) => (
               <article
                 key={i}
-                className="text-left text-sm text-gray-800 shadow-[0_8px_24px_rgba(0,0,0,0.06)] bg-white overflow-hidden"
+                className="text-left text-sm text-gray-800 shadow-[0_8px_24px_rgba(0,0,0,0.06)] bg-white overflow-hidden rounded-xl"
               >
                 {" "}
                 <div className="w-full bg-[#f5f5f5]">
@@ -76,13 +76,18 @@ export default function BlogPage() {
                   />
                 </div>
                 <div className="px-4 py-4">
-                  <h3 className="mb-1 subtile">Lorem ipsum dolor slef amet</h3>
+                  <h3 className="font-semibold text-lg md:text-[22px] leading-none tracking-tight mb-2">
+                    Lorem ipsum dolor slef amet
+                  </h3>
                   <p className="mb-2 text-xs text-gray-500 leading-snug">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua.
                   </p>
-                  <Link href="/blog/example-post" className="footer">
+                  <Link
+                    href="/blog/example-post"
+                    className="font-medium text-base leading-snug tracking-tight text-[#1A1A1A] mt-4 block hover:underline"
+                  >
                     Learn more about lorem ipsum &gt;
                   </Link>
                 </div>
@@ -93,9 +98,9 @@ export default function BlogPage() {
       </section>
       <section className="w-full flex justify-center bg-white py-16">
         <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-[1.1fr_1fr] gap-0">
-          <div className="min-h-[420px] bg-[url('/dummy/test.png')] bg-[length:40px_40px] bg-repeat flex items-start">
+          <div className="min-h-[300px] md:min-h-[420px] bg-[url('/dummy/test.png')] bg-[length:40px_40px] bg-repeat flex items-start">
             <div className="p-8">
-              <p className="righttitle">
+              <p className="font-semibold text-3xl md:text-[56px] leading-none tracking-tight text-[#252525]">
                 Lorem ipsum dolor
                 <br />
                 sit amet
@@ -106,7 +111,7 @@ export default function BlogPage() {
                 <br />
                 sit
               </p>
-              <p className="mt-4 rightsubtitle">
+              <p className="text-sm md:text-base text-[#5c5c5c] leading-snug tracking-tight mt-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
@@ -114,12 +119,12 @@ export default function BlogPage() {
           </div>
           <div className="bg-[#FFF7EE] flex items-start">
             <div className="p-8">
-              <p className="righttitle">
+              <p className="font-semibold text-3xl md:text-[56px] leading-none tracking-tight text-[#252525]">
                 Lorem ipsum dolor
                 <br />
                 sit amet
               </p>
-              <p className="mt-4 rightsubtitle">
+              <p className="text-sm md:text-base text-[#5c5c5c] leading-snug tracking-tight mt-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
@@ -129,13 +134,15 @@ export default function BlogPage() {
       </section>
 
       <section className="w-full flex justify-center bg-white">
-        <div className="w-full max-w-5xl">
-          <h2 className="mb-6 title">Lorem ipsum</h2>
+        <div className="w-full max-w-5xl px-4">
+          <h2 className="font-medium text-2xl md:text-[32px] leading-tight tracking-tight text-black mb-8">
+            Lorem ipsum
+          </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {Array.from({ length: 6 }).map((_, i) => (
               <article
                 key={i}
-                className="text-left text-sm text-gray-800 shadow-[0_8px_24px_rgba(0,0,0,0.06)] bg-white overflow-hidden"
+                className="text-left text-sm text-gray-800 shadow-[0_8px_24px_rgba(0,0,0,0.06)] bg-white overflow-hidden rounded-xl"
               >
                 <div className="w-full bg-[#f5f5f5]">
                   <img
@@ -145,13 +152,18 @@ export default function BlogPage() {
                   />
                 </div>
                 <div className="px-4 py-4">
-                  <h3 className="mb-1 subtile">Lorem ipsum dolor slef amet</h3>
+                  <h3 className="font-semibold text-lg md:text-[22px] leading-none tracking-tight mb-2">
+                    Lorem ipsum dolor slef amet
+                  </h3>
                   <p className="mb-2 text-xs text-gray-500 leading-snug">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua.
                   </p>
-                  <Link href="/blog/example-post" className="footer">
+                  <Link
+                    href="/blog/example-post"
+                    className="font-medium text-base leading-snug tracking-tight text-[#1A1A1A] mt-4 block hover:underline"
+                  >
                     Learn more about lorem ipsum &gt;
                   </Link>
                 </div>
@@ -161,15 +173,17 @@ export default function BlogPage() {
         </div>
       </section>
       <section className="w-full flex justify-center bg-white py-20">
-        <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+        <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-12 items-start px-4">
           <div>
-            <p className="faqtitle mb-3">Lorem ipsum</p>
-            <h2 className="subtitlefaq mb-4">
+            <p className="font-medium text-lg leading-snug tracking-tight text-[#f76a23] mb-6">
+              Lorem ipsum
+            </p>
+            <h2 className="font-medium text-2xl md:text-[32px] leading-tight tracking-tight text-[#111216] mb-5">
               Lorem ipsum dolore
               <br />
               self amet consectetur alt
             </h2>
-            <p className="subsubfaq max-w-md">
+            <p className="font-normal text-lg leading-snug tracking-tight text-[#5d5d65] max-w-md">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
@@ -188,18 +202,20 @@ export default function BlogPage() {
                   <button
                     type="button"
                     onClick={() => toggle(index)}
-                    className="w-full flex items-center justify-between px-5 py-3 text-left subtile"
+                    className="w-full flex items-center justify-between px-5 py-3 text-left"
                   >
-                    <span className="head">{item.title}</span>
-                    <span className="text-xl leading-none head1">
+                    <span className="font-normal text-base leading-none tracking-tight">
+                      {item.title}
+                    </span>
+                    <span className="text-xl leading-none">
                       {isOpen ? "-" : "+"}
                     </span>
                   </button>
 
                   {isOpen && (
-                    <div className="px-5 pb-4 pt-1 bg-[#F7F7F7] text-xs discription">
+                    <div className="px-5 pb-4 pt-1 bg-[#F7F7F7] text-xs text-[#5d5d65] leading-relaxed">
                       {item.body}
-                      <button className="mt-3 block text-xs font-medium lear text-orange-500">
+                      <button className="mt-3 block text-xs font-medium text-orange-500">
                         Learn More
                       </button>
                     </div>

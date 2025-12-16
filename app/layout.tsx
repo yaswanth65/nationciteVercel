@@ -20,6 +20,11 @@ export const metadata: Metadata = {
   title: "NationCite - India's First H-index Leaderboard Portal",
   description:
     "India's First H-index Leaderboard Portal for researchers and academics",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/logos/mobilelogo.png",
+  },
 };
 
 export default function RootLayout({

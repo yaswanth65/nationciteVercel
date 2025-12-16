@@ -3,11 +3,11 @@ import { Instagram, Twitter, Youtube, X } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#050505] text-white pt-20 pb-8 font-sans site-footer">
-      <div className="max-w-7xl mx-auto px-6 md:px-[108px]">
+    <footer className="bg-[#050505] text-white pt-12 md:pt-20 pb-8 font-sans site-footer">
+      <div className="max-w-7xl mx-auto px-4 md:px-[108px]">
         {/* Top CTA Section */}
-        <div className="flex flex-col items-center text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-medium mb-4 text-white tracking-tight">
+        <div className="flex flex-col items-center text-center mb-10 md:mb-16">
+          <h2 className="text-3xl md:text-5xl font-medium mb-4 text-white tracking-tight">
             Start your Lorem ipsum Today
           </h2>
           <p className="text-gray-400 text-sm md:text-base max-w-lg leading-relaxed">
@@ -17,10 +17,10 @@ export default function Footer() {
         </div>
 
         {/* Separator Line */}
-        <div className="w-full h-px bg-gray-800/60 mb-16"></div>
+        <div className="w-full h-px bg-gray-800/60 mb-10 md:mb-16"></div>
 
         {/* Main Footer Content */}
-        <div className="flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-4 mb-16">
+        <div className="flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-4 mb-10 md:mb-16">
           {/* Logo Section (Left) */}
           <div className="lg:w-1/3">
             <div className="flex items-center gap-2 text-xl font-bold tracking-wider">
@@ -140,8 +140,8 @@ export default function Footer() {
               </div>
             </div>
 
-            {/* Social Icons Column (Vertical Stack) */}
-            <div className="flex flex-col gap-3 pt-2">
+            {/* Social Icons Column (Vertical Stack on Desktop, Horizontal on Mobile) */}
+            <div className="flex flex-row lg:flex-col gap-3 pt-2 w-full lg:w-auto justify-start lg:justify-start">
               <a
                 href="#"
                 className="w-10 h-10 bg-white rounded-lg flex items-center justify-center hover:bg-gray-200 transition-colors group"
@@ -185,9 +185,9 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-gray-800/60 pt-8 flex flex-col-reverse md:flex-row justify-between items-center gap-4">
+        <div className="border-t border-gray-800/60 pt-8 flex flex-col-reverse md:flex-row justify-between items-center gap-6 md:gap-4 text-center md:text-left">
           <p className="text-gray-400 text-sm">© Copyright Pomacrea 2024</p>
-          <div className="flex gap-8">
+          <div className="flex flex-wrap justify-center gap-4 md:gap-8">
             <a
               href="/privacy"
               className="text-gray-400 hover:text-white transition-colors text-sm"

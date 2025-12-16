@@ -15,7 +15,7 @@ export default function HomePage() {
       {/* Hero Section */}
       <section className="relative bg-linear-to-b from-[#FFF5EE] via-[#FFE4C8] to-[#f8f7f7] pt-16 pb-32 w-full overflow-hidden">
         {/* <-- IMPORTANT: 72px gutters left & right --> */}
-        <div className="w-full px-[72px] flex flex-col gap-6 z-10">
+        <div className="w-full px-4 md:px-[72px] flex flex-col gap-6 z-10">
           <div className="flex flex-col mt-10 gap-6 w-full text-center mb-12">
             <h1 className="text-[#1E1E1E] mb-3">
               India's H-Index

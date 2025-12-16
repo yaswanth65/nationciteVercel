@@ -17,14 +17,14 @@ export default function AboutPage() {
   return (
     <main className="w-full bg-white">
       {/* Hero Section */}
-      <section className="w-full px-[76px] py-24 text-center">
-        <span className="text-[#F76A23] font-medium mb-6 block text-sm tracking-wide uppercase">
+      <section className="w-full px-4 md:px-[76px] py-12 md:py-24 text-center">
+        <span className="text-[#F76A23] font-medium mb-4 md:mb-6 block text-sm tracking-wide uppercase">
           About Nationcite
         </span>
-        <h1 className="mb-8">
+        <h1 className="mb-6 md:mb-8 text-3xl md:text-5xl">
           Building the Digital Infrastructure for Tomorrow's Brands.
         </h1>
-        <div className="bg-gray-50 border border-gray-100 p-8 rounded-2xl inline-block mb-10 shadow-sm">
+        <div className=" p-6 md:p-8 rounded-2xl inline-block mb-8 md:mb-10 ">
           <p className="p1 text-[#5C5C5C]">
             Nationcite is a technology-first company creating intelligent
             digital solutions for businesses that want to scale with clarity,
@@ -34,7 +34,7 @@ export default function AboutPage() {
         <div className="flex justify-center">
           <PrimaryButton
             onClick={scrollToNextSection}
-            className="bg-[#FF7A00] text-white px-16 w-[250px] py-4 rounded-full hover:bg-[#ff8d28] transition-colors"
+            className="bg-[#FF7A00] text-white px-8 w-auto md:px-16 md:w-[250px] py-4 rounded-full hover:bg-[#ff8d28] transition-colors"
           >
             Explore Our Ecosystem
           </PrimaryButton>
@@ -42,14 +42,16 @@ export default function AboutPage() {
       </section>
 
       {/* Who We Are */}
-      <section className="w-full px-[76px] py-24 grid md:grid-cols-2 gap-16 items-start">
+      <section className="w-full px-4 md:px-[76px] py-12 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start">
         <div>
           <span className="text-[#F76A23] font-bold mb-4 block text-sm uppercase tracking-wider">
             Who We Are
           </span>
-          <h3>Where Vision Meets Engineering Excellence</h3>
+          <h3 className="text-2xl md:text-3xl">
+            Where Vision Meets Engineering Excellence
+          </h3>
         </div>
-        <div className="space-y-8 text-[#5C5C5C]">
+        <div className="space-y-6 md:space-y-8 text-[#5C5C5C]">
           <p className="p1">
             Nationcite was born from a simple realization: businesses don't fail
             due to lack of ideas, they fail due to lack of execution-grade
@@ -72,26 +74,21 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* The Minds Powering Nationcite */}
-      <section className="w-full px-[76px] py-24 text-center">
-        <h3 className="mb-16">The Minds Powering Nationcite</h3>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[120px] md:auto-rows-[180px]">
-          {/* Abstract grid layout */}
-          <div className="bg-neutral-100 rounded-2xl col-span-1 row-span-2"></div>
-          <div className="bg-neutral-100 rounded-2xl col-span-1 row-span-1"></div>
-          <div className="bg-neutral-100 rounded-2xl col-span-1 row-span-1"></div>
-          <div className="bg-neutral-100 rounded-2xl col-span-1 row-span-2"></div>
+      {/* The Minds Powering Nationcite Section */}
+      <section className="w-full py-20 md:py-32 px-4 md:px-[76px] bg-white">
+        <div className="flex flex-col items-center gap-12">
+          <h3 className=" md:text-4xl font-bold text-center text-[#1E1E1E]">
+            The Minds Powering Nationcite
+          </h3>
 
-          <div className="bg-neutral-100 rounded-2xl col-span-1 row-span-1"></div>
-          <div className="bg-neutral-100 rounded-2xl col-span-1 row-span-1"></div>
-
-          <div className="bg-neutral-100 rounded-2xl col-span-1 row-span-2"></div>
-          <div className="bg-neutral-100 rounded-2xl col-span-1 row-span-1"></div>
-          <div className="bg-neutral-100 rounded-2xl col-span-1 row-span-1"></div>
-          <div className="bg-neutral-100 rounded-2xl col-span-1 row-span-2"></div>
-
-          <div className="bg-neutral-100 rounded-2xl col-span-1 row-span-1"></div>
-          <div className="bg-neutral-100 rounded-2xl col-span-1 row-span-1"></div>
+          {/* Placeholder Image */}
+          <div className="w-full rounded-2xl overflow-hidden aspect-video bg-slate-100">
+            <img
+              src="https://via.placeholder.com/1200x675?text=The+Minds+Powering+Nationcite"
+              alt="The Minds Powering Nationcite"
+              className="w-full h-full object-cover"
+            />
+          </div>
         </div>
       </section>
 
@@ -99,24 +96,40 @@ export default function AboutPage() {
       <TrustedBy />
 
       {/* 15 Reasons to Join Us */}
-      <section className="w-full px-[76px] py-24 flex flex-col lg:flex-row gap-16">
+      <section className="w-full px-4 md:px-[76px] py-12 md:py-24 flex flex-col lg:flex-row gap-8 md:gap-16">
         <div className="lg:w-1/4">
-          <h3 className="mb-6">15 Reasons to Join Us</h3>
+          <h3 className="mb-6 text-2xl md:text-3xl">15 Reasons to Join Us</h3>
           <p className="p2 text-[#5C5C5C]">
             Discover why top talent chooses to build their careers with us.
           </p>
         </div>
-        <div className="lg:w-3/4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {[...Array(15)].map((_, i) => (
+        <div className="lg:w-3/4 grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-6">
+          {[
+            "Innovation",
+            "Scalability",
+            "Precision",
+            "Transparency",
+            "Reliability",
+            "Speed",
+            "Security",
+            "Ownership",
+            "Performance",
+            "Adaptability",
+            "Vision",
+            "Automation",
+            "Growth",
+            "Excellence",
+            "Trust",
+          ].map((reason, i) => (
             <div
               key={i}
-              className="bg-[#F9F9F9] p-6 rounded-xl flex flex-col gap-4 border border-transparent"
+              className="bg-[#F9F9F9] p-4 md:p-6 rounded-xl flex flex-col gap-3 md:gap-4 border border-transparent"
             >
-              <div className="w-10 h-10 text-[#5C5C5C] bg-white rounded-lg flex items-center justify-center shadow-sm">
-                <Check size={20} />
+              <div className="w-8 md:w-10 h-8 md:h-10 text-[#5C5C5C] bg-white rounded-lg flex items-center justify-center shadow-sm flex-shrink-0">
+                <Check size={18} className="md:w-5 md:h-5" />
               </div>
-              <p className="font-medium text-lg text-neutral-800">
-                Growth Mindset
+              <p className="font-medium text-sm md:text-lg text-neutral-800">
+                {reason}
               </p>
             </div>
           ))}

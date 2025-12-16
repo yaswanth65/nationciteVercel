@@ -2,24 +2,28 @@ import "./style.css";
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white flex items-center justify-center px-4 py-10 ">
-      <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 top-mar">
-        <div className="flex flex-col justify-center wid">
-          <p className="head-or">Get in Touch with NationCite</p>
-          <h1 className="sub-head">
+      <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 pt-10 md:pt-[50px]">
+        <div className="flex flex-col justify-center">
+          <p className="text-[#ff8d28] font-medium text-lg tracking-tight pb-4 md:pb-[60px]">
+            Get in Touch with NationCite
+          </p>
+          <h1 className="text-black font-medium text-3xl md:text-[56px] leading-tight md:leading-[56px] tracking-tighter">
             Let's Build India's Research
             <br />
             Transparency Together
           </h1>
-          <p className="para-graph">
+          <p className="text-[#5d5d65] text-base md:text-lg leading-relaxed pt-5">
             Whether you&apos;re a researcher seeking profile support, an
             institution exploring analytics, or a partner interested in
             collaboration our team is here to assist you with verified, secure,
             and transparent solutions.
           </p>
-          <div className="mar-top">
-            <p className="title-footer">Trusted by 8,000+ Researchers India</p>
+          <div className="mt-10 md:mt-[150px]">
+            <p className="font-medium text-lg leading-none tracking-tight text-black">
+              Trusted by 8,000+ Researchers India
+            </p>
 
-            <div className="flex flex-wrap gap-6 items-center text-gray-400 text-sm img-martop">
+            <div className="flex flex-wrap gap-6 items-center text-gray-400 text-sm mt-8">
               <img
                 src="/logos/Logo1.png"
                 alt="Luminous"
@@ -43,7 +47,7 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
-        <div className="bg-white shadow-xl rounded-3xl p-6 md:p-8 border border-gray-100 mar-left">
+        <div className="bg-white shadow-xl rounded-3xl p-6 md:p-8 border border-gray-100 ml-0 md:ml-[58px]">
           <form className="space-y-5">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>

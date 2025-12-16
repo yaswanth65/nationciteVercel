@@ -2,15 +2,15 @@ import React from "react";
 
 export default function RightCard() {
   return (
-    <section className="w-full py-16 bg-white px-[76px]">
-      <div className="w-full bg-[#FFF9F5] rounded-[32px] p-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 ">
+    <section className="w-full py-12 md:py-16 bg-white px-4 md:px-[76px]">
+      <div className="w-full bg-[#FFF9F5] rounded-[32px] p-6 md:p-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 ">
           {/* Left Column: Text Content */}
           <div>
-            <h3 className="text-[#1E1E1E] text-4xl font-semibold leading-tight mb-2">
+            <h3 className="text-[#1E1E1E] text-3xl md:text-4xl font-semibold leading-tight mb-2">
               Lorem ipsum dolor sit amet
             </h3>
-            <span className="text-[#FF7A00] font-medium mb-6 block text-sm tracking-wide uppercase">
+            <span className="text-[#FF7A00] font-medium mb-4 md:mb-6 block text-sm tracking-wide uppercase">
               Lorem ipsum dolor sit amet
             </span>
 
@@ -25,7 +25,7 @@ export default function RightCard() {
                 fringilla lacus nec metus bibendum egestas. Iaculis massa nisl
                 malesuada lacinia integer nunc posuere.
               </p>
-              <br />
+              <br className="hidden md:block" />
               <p className="text-base leading-relaxed">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
                 faucibus ex sapien vitae pellentesque sem placerat. In id cursus
@@ -35,7 +35,7 @@ export default function RightCard() {
           </div>
 
           {/* Right Column: Image Placeholder */}
-          <div className="w-full h-[450px] relative rounded-2xl overflow-hidden bg-gray-100">
+          <div className="w-full h-[250px] md:h-[450px] relative rounded-2xl overflow-hidden bg-gray-100">
             {/* Checkerboard Pattern */}
             <div
               className="absolute inset-0 w-full h-full"

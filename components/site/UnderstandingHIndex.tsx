@@ -19,12 +19,40 @@ const CheckerboardPattern = ({ className }: { className?: string }) => (
 );
 
 export default function UnderstandingHIndex() {
+  const cards = [
+    {
+      title: "What is the H-Index?",
+      description:
+        "It measures both productivity and impact by balancing total publications with citation performance.",
+    },
+    {
+      title: "Why H-Index Matters",
+      description:
+        "It reflects sustained scholarly influence—not just one successful paper.",
+    },
+    {
+      title: "Beyond Citation Counts",
+      description:
+        "Unlike raw citations, H-Index prevents inflation through a single highly-cited work.",
+    },
+    {
+      title: "Institutional Benchmarking",
+      description:
+        "Helps universities assess research output and discipline strengths.",
+    },
+    {
+      title: "Academic Visibility",
+      description:
+        "Higher H-index improves visibility in global research databases.",
+    },
+  ];
+
   return (
-    <section className="w-full min-h-screen bg-white py-24 px-[76px] font-sans selection:bg-gray-100">
+    <section className="w-full min-h-screen bg-white py-12 md:py-24 px-4 md:px-[76px] font-sans selection:bg-gray-100">
       <div className="w-full">
         {/* Header Section */}
-        <div className="relative flex flex-col md:flex-row justify-between items-start md:items-end mb-24 gap-10">
-          <h3 className="text-black">
+        <div className="relative flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:mb-24 gap-6 md:gap-10">
+          <h3 className="text-black text-2xl md:text-3xl">
             Understanding the H-Index
             <br />
             The Backbone of Research Impact
@@ -36,57 +64,67 @@ export default function UnderstandingHIndex() {
           </p>
         </div>
 
-        {/* Bento Grid Layout */}
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+        {/* Mobile Layout - Simple Cards */}
+        <div className="md:hidden space-y-6">
+          {cards.map((card, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm"
+            >
+              <div className="mb-6">
+                <CheckerboardPattern className="w-full h-48 rounded-xl" />
+              </div>
+              <h4 className="text-black mb-3 text-lg font-semibold">
+                {card.title}
+              </h4>
+              <p className="p2 text-gray-600">{card.description}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Desktop Layout - Bento Grid */}
+        <div className="hidden md:grid grid-cols-5 gap-8">
           {/* Item 1 - Full Width */}
-          <div className="md:col-span-5 bg-white rounded-4xl p-12 md:p-16 border border-gray-100 shadow-sm flex flex-col md:flex-row justify-between items-stretch gap-12 min-h-[500px] md:min-h-[450px]">
+          <div className="col-span-5 bg-white rounded-4xl p-16 border border-gray-100 shadow-sm flex justify-between items-stretch gap-12 min-h-[450px]">
             <div className="flex flex-col justify-center max-w-md">
-              <h4 className="text-black mb-12">What is the H-Index?</h4>
-              <p className="p2 text-gray-600">
-                It measures both productivity and impact by balancing total
-                publications with citation performance.
-              </p>
+              <h4 className="text-black mb-12 text-2xl">{cards[0].title}</h4>
+              <p className="p2 text-gray-600">{cards[0].description}</p>
             </div>
             <div className="flex-1 flex items-center justify-center">
-              <CheckerboardPattern className="w-full h-full min-h-[300px] md:min-h-[280px] rounded-2xl" />
+              <CheckerboardPattern className="w-full h-full min-h-[280px] rounded-2xl" />
             </div>
           </div>
 
           {/* Item 2 - Bottom Text (60%) */}
-          <div className="md:col-span-3 bg-white rounded-4xl p-12 md:p-14 border border-gray-100 shadow-sm flex flex-col justify-between min-h-[600px]">
-            <div className="flex flex-1 items-center justify-center mb-10">
+          <div className="col-span-3 bg-white rounded-4xl p-14 border border-gray-100 shadow-sm flex flex-col justify-between min-h-[600px]">
+            <div className="flex-1 flex items-center justify-center mb-10">
               <CheckerboardPattern className="w-full h-full min-h-[250px] rounded-2xl" />
             </div>
             <div>
-              <h4 className="text-black mb-8">Why H-Index Matters</h4>
-              <p className="p2 text-gray-600">
-                It reflects sustained scholarly influence—not just one
-                successful paper.
-              </p>
+              <h4 className="text-black mb-8 text-2xl">{cards[1].title}</h4>
+              <p className="p2 text-gray-600">{cards[1].description}</p>
             </div>
           </div>
 
           {/* Item 3 - Centered Alignment (40%) */}
-          <div className="md:col-span-2 bg-white rounded-4xl p-12 md:p-14 border border-gray-100 shadow-sm flex flex-col items-center justify-between text-center min-h-[600px]">
+          <div className="col-span-2 bg-white rounded-4xl p-14 border border-gray-100 shadow-sm flex flex-col items-center justify-between text-center min-h-[600px]">
             <div className="flex-1 flex flex-col items-center justify-center">
-              <h4 className="text-black mb-8">Beyond Citation Counts</h4>
+              <h4 className="text-black mb-8 text-2xl">{cards[2].title}</h4>
               <p className="p2 text-gray-600 max-w-xs">
-                Unlike raw citations, H-Index prevents inflation through a
-                single highly-cited work.
+                {cards[2].description}
               </p>
             </div>
             <div className="w-full flex items-center justify-center mt-8">
-              <CheckerboardPattern className="w-full h-64 min-h-[200px] rounded-2xl" />
+              <CheckerboardPattern className="w-full h-64 rounded-2xl" />
             </div>
           </div>
 
           {/* Item 4 - Left Aligned (40%) */}
-          <div className="md:col-span-2 bg-white rounded-4xl p-12 md:p-14 border border-gray-100 shadow-sm flex flex-col justify-between min-h-[600px]">
+          <div className="col-span-2 bg-white rounded-4xl p-14 border border-gray-100 shadow-sm flex flex-col justify-between min-h-[600px]">
             <div>
-              <h4 className="text-black mb-8">Institutional Benchmarking</h4>
+              <h4 className="text-black mb-8 text-2xl">{cards[3].title}</h4>
               <p className="p2 text-gray-600 max-w-xs">
-                Helps universities assess research output and discipline
-                strengths.
+                {cards[3].description}
               </p>
             </div>
             <div className="flex-1 flex items-center justify-start mt-8">
@@ -95,12 +133,10 @@ export default function UnderstandingHIndex() {
           </div>
 
           {/* Item 5 - Corner Image (60%) */}
-          <div className="md:col-span-3 bg-white rounded-4xl p-12 md:p-14 border border-gray-100 shadow-sm flex flex-col relative min-h-[600px] overflow-hidden">
+          <div className="col-span-3 bg-white rounded-4xl p-14 border border-gray-100 shadow-sm flex flex-col relative min-h-[600px] overflow-hidden">
             <div className="relative z-10 max-w-[65%]">
-              <h4 className="text-black mb-8">Academic Visibility</h4>
-              <p className="p2 text-gray-600">
-                Higher H-index improves visibility in global research databases.
-              </p>
+              <h4 className="text-black mb-8 text-2xl">{cards[4].title}</h4>
+              <p className="p2 text-gray-600">{cards[4].description}</p>
             </div>
             <div className="absolute bottom-0 right-0 h-96 w-80">
               <CheckerboardPattern className="w-full h-full rounded-tl-2xl" />

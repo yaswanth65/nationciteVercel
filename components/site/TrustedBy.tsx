@@ -29,18 +29,18 @@ const logos: Logo[] = [
 
 const TrustedBy = () => {
   return (
-    <section className="w-full py-16 bg-white overflow-hidden">
+    <section className="w-full py-12 md:py-16 bg-white overflow-hidden">
       {/* Main Container Layout:
         - w-[60%] on desktop creates the 20% empty space on left/right.
         - px-8 adds the "internal padding" for structure.
       */}
-      <div className="w-full md:w-[60%] mx-auto px-6 md:px-8 flex flex-col gap-8">
+      <div className="w-full md:w-[60%] mx-auto px-4 md:px-8 flex flex-col gap-8">
         <div className="w-full text-center">
           <div className="inline-block max-w-3xl">
             <h3 className="text-gray-900 text-2xl md:text-3xl tracking-tight">
               Trusted by Leading Academic Institutions
             </h3>
-            <p className="text-gray-500 text-base md:text-lg mt-3 mx-auto text-center">
+            <p className="text-gray-500 text-sm md:text-lg mt-3 mx-auto text-center">
               NationCite collaborates with universities, hospitals, and research
               organizations shaping India’s academic future.
             </p>

@@ -18,30 +18,30 @@ export default function MethodologyPage() {
   return (
     <main className="w-full bg-white font-sans text-black">
       {/* Hero Section */}
-      <section className="relative bg-linear-to-b from-[#FFF5EE] via-[#FFE4C8] to-[#FFD9B3] pt-32 pb-24 px-[76px] overflow-hidden">
+      <section className="relative bg-linear-to-b from-[#FFF5EE] via-[#FFE4C8] to-[#FFD9B3] pt-16 pb-12 md:pt-32 md:pb-24 px-4 md:px-[76px] overflow-hidden">
         {/* Decorative background elements */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-orange-100 rounded-full opacity-20 -mr-40 -mt-40"></div>
         <div className="absolute bottom-0 left-0 w-72 h-72 bg-orange-50 rounded-full opacity-30 -ml-36 -mb-36"></div>
 
         <div className="w-full relative z-10">
-          <div className="mb-12">
+          <div className="mb-8 mt-8 md:mb-12">
             <span className="text-[#FF7A00] font-medium mb-4 block text-sm tracking-wide uppercase">
               Methodology
             </span>
-            <h1 className="text-[#1E1E1E] mb-6">
+            <h1 className="text-[#1E1E1E] mb-4 md:mb-6 text-3xl md:text-5xl">
               Nationcite's H-Index
               <br />
               Methodology
             </h1>
-            <p className="p1 text-[#5C5C5C] mb-8">
+            <p className="p1 text-[#5C5C5C] mb-6 md:mb-8">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <div className="flex flex-wrap gap-4 mt-7">
-              <button className="bg-[#FF7A00] text-white px-4 py-2 rounded-xl font-medium hover:bg-[#e66e00] transition-colors">
+              <button className="bg-[#FF7A00] text-white px-4 py-2 rounded-xl font-medium hover:bg-[#e66e00] transition-colors w-auto">
                 CTA Button
               </button>
-              <button className="bg-transparent border border-[#1E1E1E] text-[#1E1E1E] px-4 py-2 rounded-xl font-medium hover:bg-gray-50 transition-colors">
+              <button className="bg-transparent border border-[#1E1E1E] text-[#1E1E1E] px-4 py-2 rounded-xl font-medium hover:bg-gray-50 transition-colors w-auto">
                 CTA Button
               </button>
             </div>
@@ -59,6 +59,7 @@ export default function MethodologyPage() {
       <RightCard />
 
       <ConsultancySection />
+      <ThreeBlocksSection />
 
       <FAQSection />
 

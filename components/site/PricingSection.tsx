@@ -60,16 +60,17 @@ export default function PricingSection({ className }: { className?: string }) {
 
   return (
     <section
-      className={`w-full pt-5 pb-12 md:pb-20 min-h-screen font-sans px-4 md:px-[76px] ${
+      className={`w-full pt-5 pb-12 md:pb-20 min-h-screen font-sans px-4 md:px-[120px] ${
         className || "bg-white"
       }`}
     >
       <div className="w-full">
         {/* Header Section */}
-        <div className="text-center mb-10 md:mb-16">
+        <div className="text-center mb-8 md:mb-12">
           <h3 className="text-[#111111] mb-6 md:mb-8 text-2xl md:text-3xl">
- Free Access for Discovery   &       </h3>
- <h3> Premium Tools for Power Users</h3>
+            Free Access for Discovery &{" "}
+          </h3>
+          <h3> Premium Tools for Power Users</h3>
 
           {/* Toggle Switch */}
           <div className="flex justify-center">

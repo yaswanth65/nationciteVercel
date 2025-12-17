@@ -1,4 +1,6 @@
 import "./style.css";
+import FinalCTA from "@/components/site/FinalCTA";
+
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white flex items-center justify-center px-4 py-10 ">
@@ -7,7 +9,7 @@ export default function ContactPage() {
           <p className="text-[#ff8d28] font-medium text-lg tracking-tight pb-4 md:pb-[60px]">
             Get in Touch with NationCite
           </p>
-          <h1 className="text-black font-medium text-3xl md:text-[56px] leading-tight md:leading-[56px] tracking-tighter">
+          <h1 className="text-black font-medium text-3xl md:text-[56px] leading-[1.0] md:leading-[1.0] tracking-tighter">
             Let's Build India's Research
             <br />
             Transparency Together
@@ -126,6 +128,8 @@ export default function ContactPage() {
           </form>
         </div>
       </div>
+
+      <FinalCTA />
     </div>
   );
 }

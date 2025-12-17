@@ -9,7 +9,7 @@ h1 {
   font-family: var(--font-inter), sans-serif;
   font-weight: 600;
   font-size: 64px;
-  line-height: 76px; /* Increased from 64px for breathing room */
+  line-height: 72px; /* Tighter line spacing for hero headings */
   letter-spacing: -0.04em;
   margin: 0;
   color: var(--neutral-600);

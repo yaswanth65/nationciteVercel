@@ -28,7 +28,7 @@ export default function FAQSection({
   };
 
   return (
-    <section className="w-full px-4 md:px-[76px] py-12 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
+    <section className="w-full px-4 md:px-[120px] py-12 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
       <div>
         <span className="text-[#F76A23] font-bold mb-4 block text-sm uppercase tracking-wider">
           {kicker}

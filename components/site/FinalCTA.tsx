@@ -1,8 +1,9 @@
 import React from "react";
+import Image from "next/image";
 
 export default function FinalCTA() {
   return (
-    <section className="w-full py-16 md:py-28 bg-white px-4 md:px-[76px]">
+    <section className="w-full py-16 md:py-28 bg-white px-4 md:px-[120px]">
       <div className="w-full flex flex-col items-center text-center">
         <div className="mb-8 md:mb-10">
           <span className="bg-[#FFF5EB] text-[#FF7A00] px-4 py-1 rounded-full text-sm font-medium border border-[#FFD6B3]">
@@ -24,12 +25,21 @@ export default function FinalCTA() {
 
         <div className="flex py-3 flex-col md:flex-row gap-4 justify-center">
           <button className="bg-[#FF7A00] text-white px-4 py-2 rounded-xl font-medium text-lg hover:bg-[#e66e00] transition-colors shadow-lg shadow-orange-200 w-fit">
-            CTA
+            Claim Your Profile
           </button>
           <button className="bg-[#1E1E1E] text-white px-4 py-2 rounded-xl font-medium text-lg hover:bg-black transition-colors w-fit">
-            CTA
+            Request Institution Dashboard{" "}
           </button>
         </div>
+      </div>
+
+      {/* Full-width Image Section */}
+      <div className="w-screen relative left-[calc(-50vw+50%)] px-[76px] mt-12 md:mt-16">
+        <img
+          src="/CTA Section Image - Nationcite.png"
+          alt="NationCite CTA Section"
+          className="w-full h-auto rounded-2xl"
+        />
       </div>
     </section>
   );

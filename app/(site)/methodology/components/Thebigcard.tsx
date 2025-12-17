@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Thebigcard() {
   return (
-    <section className="w-full py-12 md:py-16 bg-white px-4 md:px-[76px]">
+    <section className="w-full py-12 md:py-16 bg-white px-4 md:px-[120px]">
       {/* Main Container Card - Cream Background */}
       <div className="w-full bg-[#FFF9F5] rounded-[32px] p-6 md:p-16">
         {/* Top Text Section */}

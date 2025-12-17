@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import "./hero-style.css";
 import PrimaryButton from "@/components/ui/PrimaryButton";
 import TrustedBy from "@/components/site/TrustedBy";
 import FAQSection from "@/components/site/FAQSection";
@@ -17,11 +18,11 @@ export default function AboutPage() {
   return (
     <main className="w-full bg-white">
       {/* Hero Section */}
-      <section className="w-full px-4 md:px-[76px] py-12 md:py-24 text-center">
-        <span className="text-[#F76A23] font-medium mb-4 md:mb-6 block text-sm tracking-wide uppercase">
+      <section className="w-full px-4 md:px-[120px] py-12 md:py-24 text-center page-bg">
+        <span className="text-[#F76A23] pt-6 font-medium mb-4 md:mb-6 block text-sm tracking-wide uppercase">
           About Nationcite
         </span>
-        <h1 className="mb-6 md:mb-8 text-3xl md:text-5xl">
+        <h1 className="mb-6 md:mb-8 text-3xl md:text-5xl leading-[1.0]">
           Building the Digital Infrastructure for Tomorrow's Brands.
         </h1>
         <div className=" p-6 md:p-8 rounded-2xl inline-block mb-8 md:mb-10 ">
@@ -42,7 +43,7 @@ export default function AboutPage() {
       </section>
 
       {/* Who We Are */}
-      <section className="w-full px-4 md:px-[76px] py-12 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start">
+      <section className="w-full px-4 md:px-[120px] py-12 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start">
         <div>
           <span className="text-[#F76A23] font-bold mb-4 block text-sm uppercase tracking-wider">
             Who We Are
@@ -75,9 +76,9 @@ export default function AboutPage() {
       </section>
 
       {/* The Minds Powering Nationcite Section */}
-      <section className="w-full py-20 md:py-32 px-4 md:px-[76px] bg-white">
+      <section className="w-full py-20 md:py-32 px-4 md:px-[120px] bg-white">
         <div className="flex flex-col items-center gap-12">
-          <h3 className=" md:text-4xl font-bold text-center text-[#1E1E1E]">
+          <h3 className=" md:text-4xl  text-center text-[#1E1E1E]">
             The Minds Powering Nationcite
           </h3>
 
@@ -96,7 +97,7 @@ export default function AboutPage() {
       <TrustedBy />
 
       {/* 15 Reasons to Join Us */}
-      <section className="w-full px-4 md:px-[76px] py-12 md:py-24 flex flex-col lg:flex-row gap-8 md:gap-16">
+      <section className="w-full px-4 md:px-[120px] py-12 md:py-24 flex flex-col lg:flex-row gap-8 md:gap-16">
         <div className="lg:w-1/4">
           <h3 className="mb-6 text-2xl md:text-3xl">15 Reasons to Join Us</h3>
           <p className="p2 text-[#5C5C5C]">
@@ -137,6 +138,7 @@ export default function AboutPage() {
       </section>
 
       <FAQSection />
+      <FinalCTA />
     </main>
   );
 }

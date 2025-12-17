@@ -124,7 +124,7 @@ const LeaderboardWidget = () => {
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-8">
           <div>
             <h3
-              className="h3-bento  text-slate-900 flex items-center gap-3"
+              className="h3  flex items-center gap-3"
               style={{
                 fontFamily: "'Helvetica Rounded', 'Helvetica', sans-serif",
               }}
@@ -165,6 +165,9 @@ const LeaderboardWidget = () => {
                     ? "bg-[#FF7A00] text-white border-[#FF7A00] shadow-lg shadow-orange-200 transform -translate-y-0.5"
                     : "bg-white text-slate-500 border-slate-200 hover:border-slate-300 hover:bg-slate-50"
                 }`}
+                style={{
+                  fontFamily: "'Helvetica Rounded', 'Helvetica', sans-serif",
+                }}
               >
                 <Icon size={18} strokeWidth={isActive ? 2.5 : 2} />
                 {tab.label}

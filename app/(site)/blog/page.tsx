@@ -2,6 +2,7 @@
 import { useState } from "react";
 import "./style.css";
 import Link from "next/link";
+import FinalCTA from "@/components/site/FinalCTA";
 const items = [
   {
     title: "Lorem ipsum dolor self amet, consectetur",
@@ -37,7 +38,7 @@ export default function BlogPage() {
         <section className="text-center px-4">
           <p className="mb-4 text-sm font-medium text-orange-500">Resources</p>
 
-          <h1 className="mb-4 text-3xl md:text-5xl lg:text-6xl font-semibold leading-tight text-black">
+          <h1 className="mb-4 text-3xl md:text-5xl lg:text-6xl font-semibold leading-[1.0] text-black">
             Lorem ipsum dolor
             <br />
             sit amet consectetur
@@ -226,6 +227,8 @@ export default function BlogPage() {
           </div>
         </div>
       </section>
+
+      <FinalCTA />
     </>
   );
 }

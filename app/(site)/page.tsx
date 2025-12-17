@@ -61,8 +61,7 @@ export default function HomePage() {
                 ))}
               </div>
               <span className="text-m text-[#1E1E1E] font-medium">
-                Lorem ipsum dolor sit amet consectetur
-              </span>
+1,42,846+ Indian Researchers Indexed              </span>
             </div>
           </div>
 

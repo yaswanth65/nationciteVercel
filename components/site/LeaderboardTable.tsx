@@ -21,7 +21,7 @@ interface LeaderboardTableProps {
 const LeaderboardTable: React.FC<LeaderboardTableProps> = ({ data, type }) => {
   const headerTextStyle: React.CSSProperties = {
     fontFamily:
-      "'Segoe UI', '-apple-system', 'BlinkMacSystemFont', 'Rounded Sans', sans-serif",
+      "var(--font-inter), 'Segoe UI', '-apple-system', 'BlinkMacSystemFont', 'Rounded Sans', sans-serif",
     fontWeight: 600,
     fontStyle: "normal",
     fontSize: "13.5px",
@@ -91,7 +91,10 @@ const LeaderboardTable: React.FC<LeaderboardTableProps> = ({ data, type }) => {
               >
                 {/* Rank */}
                 <div className="md:col-span-1 absolute top-4 right-4 md:static">
-                  <span className="font-bold text-sm text-slate-400 bg-slate-50 px-2 py-1 rounded-md md:bg-transparent md:p-0">
+                  <span
+                    className="font-bold text-sm text-slate-400 bg-slate-50 px-2 py-1 rounded-md md:bg-transparent md:p-0"
+                    style={{ fontFamily: "var(--font-inter)" }}
+                  >
                     #{row.rank}
                   </span>
                 </div>
@@ -106,11 +109,17 @@ const LeaderboardTable: React.FC<LeaderboardTableProps> = ({ data, type }) => {
                     />
                   </div>
                   <div className="min-w-0 flex flex-col md:block">
-                    <p className="text-sm md:text-xs font-bold md:font-medium text-slate-800 truncate group-hover:text-[#FF7A00] transition-colors">
+                    <p
+                      className="text-sm md:text-xs font-bold md:font-medium text-slate-800 truncate group-hover:text-[#FF7A00] transition-colors"
+                      style={{ fontFamily: "var(--font-inter)" }}
+                    >
                       {row.name}
                     </p>
                     {/* Mobile Institution shown below name */}
-                    <div className="flex md:hidden items-center gap-1.5 text-xs text-slate-500 mt-1">
+                    <div
+                      className="flex md:hidden items-center gap-1.5 text-xs text-slate-500 mt-1"
+                      style={{ fontFamily: "var(--font-inter)" }}
+                    >
                       <Building2 size={10} />
                       <span className="truncate max-w-[200px]">
                         {row.institution}
@@ -120,7 +129,10 @@ const LeaderboardTable: React.FC<LeaderboardTableProps> = ({ data, type }) => {
                 </div>
 
                 {/* Institution - Desktop Only */}
-                <div className="hidden md:flex col-span-3 items-center gap-2 text-sm text-slate-600 font-medium truncate">
+                <div
+                  className="hidden md:flex col-span-3 items-center gap-2 text-sm text-slate-600 font-medium truncate"
+                  style={{ fontFamily: "var(--font-inter)" }}
+                >
                   <div className="p-1 rounded-full bg-slate-100 text-slate-400 shrink-0">
                     <Building2 size={12} />
                   </div>
@@ -130,14 +142,23 @@ const LeaderboardTable: React.FC<LeaderboardTableProps> = ({ data, type }) => {
                 {/* H-Index Badge */}
                 <div className="w-full md:col-span-2 flex justify-start md:justify-center mt-2 md:mt-0">
                   <div className="w-full md:w-auto flex items-center justify-between md:justify-center px-3 py-2 md:py-1 rounded-lg md:rounded-full bg-orange-50/50 border border-orange-100 group-hover:bg-[#FF7A00] group-hover:border-[#FF7A00] transition-all duration-300">
-                    <span className="md:hidden text-xs font-medium text-slate-500 group-hover:text-orange-100">
+                    <span
+                      className="md:hidden text-xs font-medium text-slate-500 group-hover:text-orange-100"
+                      style={{ fontFamily: "var(--font-inter)" }}
+                    >
                       H-Index Score
                     </span>
                     <div className="flex items-center">
-                      <span className="text-sm font-bold text-[#FF7A00] group-hover:text-white transition-colors">
+                      <span
+                        className="text-sm font-bold text-[#FF7A00] group-hover:text-white transition-colors"
+                        style={{ fontFamily: "var(--font-inter)" }}
+                      >
                         {row.hIndex}
                       </span>
-                      <span className="ml-1.5 text-[10px] font-semibold text-orange-300 group-hover:text-orange-100 uppercase tracking-wide">
+                      <span
+                        className="ml-1.5 text-[10px] font-semibold text-orange-300 group-hover:text-orange-100 uppercase tracking-wide"
+                        style={{ fontFamily: "var(--font-inter)" }}
+                      >
                         Score
                       </span>
                     </div>
@@ -147,14 +168,23 @@ const LeaderboardTable: React.FC<LeaderboardTableProps> = ({ data, type }) => {
                 {/* Articles & Action */}
                 <div className="w-full md:col-span-3 flex items-center justify-between md:justify-end gap-3 md:pr-2 mt-1 md:mt-0 border-t border-slate-50 pt-3 md:border-0 md:pt-0">
                   <div className="flex items-center justify-between w-full md:w-auto md:block md:text-right">
-                    <span className="md:hidden text-xs font-medium text-slate-500">
+                    <span
+                      className="md:hidden text-xs font-medium text-slate-500"
+                      style={{ fontFamily: "var(--font-inter)" }}
+                    >
                       Total Articles
                     </span>
                     <div className="flex items-center gap-2 md:block">
-                      <span className="block text-sm font-bold text-slate-700">
+                      <span
+                        className="block text-sm font-bold text-slate-700"
+                        style={{ fontFamily: "var(--font-inter)" }}
+                      >
                         {row.articles}
                       </span>
-                      <span className="text-[10px] text-slate-400 font-medium uppercase">
+                      <span
+                        className="text-[10px] text-slate-400 font-medium uppercase"
+                        style={{ fontFamily: "var(--font-inter)" }}
+                      >
                         Pubs
                       </span>
                     </div>
@@ -177,18 +207,35 @@ const LeaderboardTable: React.FC<LeaderboardTableProps> = ({ data, type }) => {
           </button>
 
           <div className="flex items-center bg-slate-50 rounded-lg p-1">
-            <button className="w-8 h-8 flex items-center justify-center rounded-md bg-white shadow-sm font-bold text-sm text-[#FF7A00]">
+            <button
+              className="w-8 h-8 flex items-center justify-center rounded-md bg-white shadow-sm font-bold text-sm text-[#FF7A00]"
+              style={{ fontFamily: "var(--font-inter)" }}
+            >
               1
             </button>
-            <button className="w-8 h-8 flex items-center justify-center rounded-md hover:bg-white/50 font-medium text-sm text-slate-500 transition-colors">
+            <button
+              className="w-8 h-8 flex items-center justify-center rounded-md hover:bg-white/50 font-medium text-sm text-slate-500 transition-colors"
+              style={{ fontFamily: "var(--font-inter)" }}
+            >
               2
             </button>
-            <button className="w-8 h-8 flex items-center justify-center rounded-md hover:bg-white/50 font-medium text-sm text-slate-500 transition-colors">
+            <button
+              className="w-8 h-8 flex items-center justify-center rounded-md hover:bg-white/50 font-medium text-sm text-slate-500 transition-colors"
+              style={{ fontFamily: "var(--font-inter)" }}
+            >
               3
             </button>
           </div>
-          <span className="text-slate-300 px-1 font-medium">...</span>
-          <button className="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-50 font-medium text-sm text-slate-500 transition-colors">
+          <span
+            className="text-slate-300 px-1 font-medium"
+            style={{ fontFamily: "var(--font-inter)" }}
+          >
+            ...
+          </span>
+          <button
+            className="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-slate-50 font-medium text-sm text-slate-500 transition-colors"
+            style={{ fontFamily: "var(--font-inter)" }}
+          >
             100
           </button>
 
@@ -197,7 +244,10 @@ const LeaderboardTable: React.FC<LeaderboardTableProps> = ({ data, type }) => {
           </button>
         </div>
 
-        <div className="text-sm text-slate-400 font-medium">
+        <div
+          className="text-sm text-slate-400 font-medium"
+          style={{ fontFamily: "var(--font-inter)" }}
+        >
           Showing <span className="text-slate-900 font-bold">1-10</span> of{" "}
           <span className="text-slate-900 font-bold">1,000</span>
         </div>

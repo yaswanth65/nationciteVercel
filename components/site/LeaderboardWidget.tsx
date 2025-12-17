@@ -123,12 +123,7 @@ const LeaderboardWidget = () => {
       <div className="px-4 md:px-10 py-6 md:py-8 bg-white border-b border-slate-100 z-10">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-8">
           <div>
-            <h3
-              className="h3  flex items-center gap-3"
-              style={{
-                fontFamily: "'Helvetica Rounded', 'Helvetica', sans-serif",
-              }}
-            >
+            <h3 className="h3 flex items-center gap-3">
               <div className="p-2 bg-orange-50 rounded-lg text-[#FF7A00]">
                 <Sparkles size={20} />
               </div>
@@ -143,7 +138,7 @@ const LeaderboardWidget = () => {
             <input
               type="text"
               placeholder="Search researchers, institutions..."
-              className="pl-10 pr-4 py-3 w-full md:w-[320px] bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-800 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#FF7A00]/20 focus:border-[#FF7A00] transition-all shadow-sm"
+              className="pl-10 pr-4 py-3 w-full md:w-[320px] bg-slate-50 border border-slate-200 rounded-xl text-sm text-slate-700 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#FF7A00]/20 focus:border-[#FF7A00] transition-all shadow-sm"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
             />
@@ -160,14 +155,11 @@ const LeaderboardWidget = () => {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`flex items-center gap-2.5 px-6 py-3 rounded-full text-sm font-bold transition-all duration-300 border ${
+                className={`flex items-center gap-2.5 px-6 py-3 rounded-full text-sm transition-all duration-300 border ${
                   isActive
                     ? "bg-[#FF7A00] text-white border-[#FF7A00] shadow-lg shadow-orange-200 transform -translate-y-0.5"
-                    : "bg-white text-slate-500 border-slate-200 hover:border-slate-300 hover:bg-slate-50"
+                    : "bg-white text-slate-700 border-slate-200 hover:border-slate-300 hover:bg-slate-50"
                 }`}
-                style={{
-                  fontFamily: "'Helvetica Rounded', 'Helvetica', sans-serif",
-                }}
               >
                 <Icon size={18} strokeWidth={isActive ? 2.5 : 2} />
                 {tab.label}

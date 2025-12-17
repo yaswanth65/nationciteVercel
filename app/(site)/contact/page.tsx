@@ -7,7 +7,7 @@ export default function ContactPage() {
       <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 pt-10 md:pt-[50px]">
         <div className="flex flex-col justify-center">
           <p className="text-[#ff8d28] font-medium text-lg tracking-tight pb-4 md:pb-[60px]">
-            Get in Touch with NationCite
+            Get in Touch with Nationcite
           </p>
           <h1 className="text-black font-medium text-3xl md:text-[56px] leading-[1.0] md:leading-[1.0] tracking-tighter">
             Let's Build India's Research

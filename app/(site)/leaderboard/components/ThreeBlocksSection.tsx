@@ -2,8 +2,8 @@ import React from "react";
 
 export default function ThreeBlocksSection() {
   return (
-    <section className="w-full py-12 md:py-24 bg-white px-4 md:px-[120px]">
-      <div className="w-full flex flex-col gap-6">
+    <section className="w-full py-8 md:py-12 bg-white px-4 md:px-[120px]">
+      <div className="w-full flex flex-col gap-4">
         {/* Block 1 - Now a single connected card */}
         <div className="w-full rounded-3xl overflow-hidden border border-gray-200 bg-[#F5F5F5] shadow-[0_20px_40px_rgba(2,6,23,0.06)] flex flex-col md:flex-row">
           {/* Left Side: Content */}

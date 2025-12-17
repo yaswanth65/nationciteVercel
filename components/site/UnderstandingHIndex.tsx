@@ -22,13 +22,18 @@ export default function UnderstandingHIndex() {
   const cards = [
     {
       title: "What is the H-Index?",
-      description:
-        "It measures both productivity and impact by balancing total publications with citation performance.",
+      description: (
+        <>
+          It measures both productivity and impact by balancing
+          <br className="hidden md:inline" />
+          total publications with citation performance.
+        </>
+      ),
     },
     {
       title: "Why H-Index Matters",
       description:
-        "It reflects sustained scholarly influence—not just one successful paper.",
+        "It reflects sustained scholarly influence not just one successful paper.",
     },
     {
       title: "Beyond Citation Counts",
@@ -52,7 +57,7 @@ export default function UnderstandingHIndex() {
       <div className="w-full">
         {/* Header Section */}
         <div className="relative flex flex-col md:flex-row justify-between items-start md:items-end mb-8 md:mb-12 gap-6 md:gap-10">
-          <h3 className="text-black text-2xl md:text-3xl">
+          <h3 className="mb-6">
             Understanding the H-Index
             <br />
             The Backbone of Research Impact
@@ -74,9 +79,7 @@ export default function UnderstandingHIndex() {
               <div className="mb-6">
                 <CheckerboardPattern className="w-full h-48 rounded-xl" />
               </div>
-              <h4 className="text-black mb-3 text-lg font-semibold">
-                {card.title}
-              </h4>
+              <h5 className="mb-3">{card.title}</h5>
               <p className="p2 text-gray-600">{card.description}</p>
             </div>
           ))}
@@ -92,7 +95,7 @@ export default function UnderstandingHIndex() {
                 <CheckerboardPattern className="w-full h-full min-h-[180px] rounded-2xl" />
               </div>
               <div>
-                <h4 className="text-black mb-4 text-2xl">{cards[0].title}</h4>
+                <h5 className="mb-4">{cards[0].title}</h5>
                 <p className="p2 text-gray-600">{cards[0].description}</p>
               </div>
             </div>
@@ -100,7 +103,7 @@ export default function UnderstandingHIndex() {
             {/* Item 2 - 40% width */}
             <div className="col-span-2 bg-white rounded-4xl p-8 border border-gray-100 shadow-sm flex flex-col items-center justify-between text-center min-h-[400px]">
               <div className="flex-1 flex flex-col items-center justify-center">
-                <h4 className="text-black mb-4 text-2xl">{cards[1].title}</h4>
+                <h5 className="mb-4">{cards[1].title}</h5>
                 <p className="p2 text-gray-600 max-w-xs">
                   {cards[1].description}
                 </p>
@@ -119,7 +122,7 @@ export default function UnderstandingHIndex() {
                 <CheckerboardPattern className="w-full h-full min-h-[150px] rounded-2xl" />
               </div>
               <div>
-                <h4 className="text-black mb-4 text-2xl">{cards[2].title}</h4>
+                <h5 className="mb-4">{cards[2].title}</h5>
                 <p className="p2 text-gray-600">{cards[2].description}</p>
               </div>
             </div>
@@ -130,7 +133,7 @@ export default function UnderstandingHIndex() {
                 <CheckerboardPattern className="w-full h-full min-h-[150px] rounded-2xl" />
               </div>
               <div>
-                <h4 className="text-black mb-4 text-2xl">{cards[3].title}</h4>
+                <h5 className="mb-4">{cards[3].title}</h5>
                 <p className="p2 text-gray-600">{cards[3].description}</p>
               </div>
             </div>
@@ -141,7 +144,7 @@ export default function UnderstandingHIndex() {
                 <CheckerboardPattern className="w-full h-full min-h-[150px] rounded-2xl" />
               </div>
               <div>
-                <h4 className="text-black mb-4 text-2xl">{cards[4].title}</h4>
+                <h5 className="mb-4">{cards[4].title}</h5>
                 <p className="p2 text-gray-600">{cards[4].description}</p>
               </div>
             </div>

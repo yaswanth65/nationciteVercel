@@ -26,7 +26,7 @@ export default function HomePage() {
             </h1>
 
             <p className="p1 text-[#5C5C5C] mb-2">
-              NationCite is India’s national research visibility and H-Index
+              Nationcite is India’s national research visibility and H-Index
               analytics platform
             </p>
 
@@ -61,7 +61,8 @@ export default function HomePage() {
                 ))}
               </div>
               <span className="text-m text-[#1E1E1E] font-medium">
-1,42,846+ Indian Researchers Indexed              </span>
+                1,42,846+ Indian Researchers Indexed{" "}
+              </span>
             </div>
           </div>
 

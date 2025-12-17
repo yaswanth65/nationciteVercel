@@ -5,17 +5,6 @@ export default function Footer() {
   return (
     <footer className="bg-[#050505] text-white pt-12 md:pt-20 pb-8 font-sans site-footer w-full">
       <div className="w-full mx-auto px-[120px]">
-        {/* Top CTA Section */}
-        <div className="flex flex-col items-center text-center mb-10 md:mb-16">
-          <h2 className="text-3xl md:text-5xl mb-4 text-slate-900 tracking-tight">
-            Start your Lorem ipsum Today
-          </h2>
-          <p className="text-slate-700 text-sm md:text-base max-w-lg leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-
         {/* Separator Line */}
         <div className="w-full h-px bg-gray-800/60 mb-10 md:mb-16"></div>
 
@@ -26,7 +15,7 @@ export default function Footer() {
             <img
               src="/logos/pcLogo.png"
               alt="NationCite"
-              className="h-8 md:h-10 w-auto"
+              className="h-12 md:h-16 w-auto"
             />
           </div>
 
@@ -34,7 +23,9 @@ export default function Footer() {
           <div className="flex flex-wrap lg:flex-nowrap gap-10 lg:gap-20 w-full lg:w-auto justify-between lg:justify-end">
             {/* Company Column */}
             <div className="flex flex-col min-w-[140px]">
-              <h3 className="text-slate-900 mb-6">Company</h3>
+              <h3 className="text-lg md:text-xl font-semibold text-slate-900 mb-4">
+                Company
+              </h3>
               <div className="flex flex-col gap-4">
                 <a
                   href="/about"
@@ -65,7 +56,9 @@ export default function Footer() {
 
             {/* Leaderboards Column */}
             <div className="flex flex-col min-w-[140px]">
-              <h3 className="text-slate-900 mb-6">Leaderboards</h3>
+              <h3 className="text-lg md:text-xl font-semibold text-slate-900 mb-4">
+                Leaderboards
+              </h3>
               <div className="flex flex-col gap-4">
                 <a
                   href="/leaderboard/scholars"
@@ -90,7 +83,9 @@ export default function Footer() {
 
             {/* Resources Column */}
             <div className="flex flex-col min-w-[140px]">
-              <h3 className="text-slate-900 mb-6">Resources</h3>
+              <h3 className="text-lg md:text-xl font-semibold text-slate-900 mb-4">
+                Resources
+              </h3>
               <div className="flex flex-col gap-4">
                 <a
                   href="/blog"
@@ -165,7 +160,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800/60 pt-8 flex flex-col-reverse md:flex-row justify-between items-center gap-6 md:gap-4 text-center md:text-left">
-          <p className="text-slate-700 text-sm">© Copyright NationCite 2025</p>
+          <p className="text-slate-700 text-sm">© copyright Nationcite 2025</p>
           <div className="flex flex-wrap justify-center gap-4 md:gap-8">
             <a
               href="/privacy"

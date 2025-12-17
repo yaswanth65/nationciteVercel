@@ -233,7 +233,7 @@ export default function RegisterPage() {
             className={`step-text-wrapper ${step > 4 ? "is-completed" : ""}`}
           >
             <div className="step-title">Discovery Questions</div>
-            <div className="step-subtitle">How you&apos;ll use NationCite</div>
+            <div className="step-subtitle">How you&apos;ll use Nationcite</div>
           </div>
         </div>
         <span className="step-arrow">
@@ -261,7 +261,7 @@ export default function RegisterPage() {
       {/* Navbar */}
       <nav className="auth-navbar">
         <Link href="/" className="auth-logo">
-          <img src="/logos/pcLogo.png" alt="NationCite" />
+          <img src="/logos/pcLogo.png" alt="Nationcite" />
         </Link>
         <div className="auth-nav-right">
           <span className="auth-nav-text">Already have an account?</span>
@@ -423,7 +423,7 @@ export default function RegisterPage() {
                 </button>
 
                 <p className="bottom-inline">
-                  Already on NationCite?{" "}
+                  Already on Nationcite?{" "}
                   <Link href="/signin" className="link-btn">
                     Sign in here
                   </Link>
@@ -553,7 +553,7 @@ export default function RegisterPage() {
 
                 <div className="pill-group">
                   <p className="field-label">
-                    What will you use NationCite for?
+                    What will you use Nationcite for?
                   </p>
                   {[
                     "Conducting research",
@@ -671,7 +671,7 @@ export default function RegisterPage() {
                 </button>
 
                 <p className="bottom-inline">
-                  Already on NationCite?{" "}
+                  Already on Nationcite?{" "}
                   <Link href="/signin" className="link-btn">
                     Sign in here
                   </Link>
@@ -802,7 +802,7 @@ export default function RegisterPage() {
 
                 <div className="pill-group">
                   <p className="field-label">
-                    What will you use NationCite for?
+                    What will you use Nationcite for?
                   </p>
                   {[
                     "Conducting research",
@@ -923,7 +923,7 @@ export default function RegisterPage() {
                 </button>
 
                 <p className="bottom-inline">
-                  Already on NationCite?{" "}
+                  Already on Nationcite?{" "}
                   <Link href="/signin" className="link-btn">
                     Sign in here
                   </Link>
@@ -1026,7 +1026,7 @@ export default function RegisterPage() {
 
                 <div className="pill-group">
                   <p className="field-label">
-                    What will you use NationCite for?
+                    What will you use Nationcite for?
                   </p>
                   {[
                     "Conducting research",

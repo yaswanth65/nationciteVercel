@@ -27,17 +27,17 @@ export default function MethodologyPage() {
 
         <div className="w-full relative z-10">
           <div className="mb-8 mt-8 md:mb-12">
-            <span className="text-[#FF7A00] font-medium mb-4 block text-sm tracking-wide uppercase">
+            <span className="text-[#FF7A00] font-medium mb-4 block text-sm  uppercase">
               Methodology
             </span>
             <h1 className="text-[#1E1E1E] mb-4 md:mb-6 text-3xl md:text-5xl leading-[1.0]">
-              Nationcite's H-Index
+              Built on Transparency,
               <br />
-              Methodology
+              Governed by Data Integrity{" "}
             </h1>
-            <p className="p1 text-[#5C5C5C] mb-6 md:mb-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <p className="p1 pt-4 text-[#5C5C5C] mb-6 md:mb-8">
+              Nationcite follows a reproducible, evidence-backed methodology
+              using global open <br /> and licensed bibliometric sources.
             </p>
             <div className="flex flex-wrap gap-4 mt-7">
               <button className="bg-[#FF7A00] text-white px-4 py-2 rounded-xl font-medium hover:bg-[#e66e00] transition-colors w-auto">

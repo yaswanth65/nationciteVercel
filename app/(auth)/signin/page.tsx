@@ -25,7 +25,7 @@ export default function LoginPage() {
       {/* Navbar */}
       <nav className="auth-navbar">
         <Link href="/" className="auth-logo">
-          <img src="/logos/pcLogo.png" alt="NationCite" />
+          <img src="/logos/pcLogo.png" alt="Nationcite" />
         </Link>
         <div className="auth-nav-right">
           <span className="auth-nav-text">Don&apos;t have an account?</span>

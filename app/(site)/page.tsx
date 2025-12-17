@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
+import "./hero-style.css";
 import TrustedBy from "@/components/site/TrustedBy";
 import UnderstandingHIndex from "@/components/site/UnderstandingHIndex";
 import TransparencySection from "@/components/site/TransparencySection";
@@ -13,11 +15,11 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-white font-sans">
       {/* Hero Section */}
-      <section className="relative bg-linear-to-b from-[#FFF5EE] via-[#FFE4C8] to-[#f8f7f7] pt-16 pb-32 w-full overflow-hidden">
+      <section className="relative bg-linear-to-b from-[#FFF5EE] via-[#FFE4C8] to-[#f8f7f7] pt-16 pb-32 w-full overflow-hidden page-bg">
         {/* <-- IMPORTANT: 72px gutters left & right --> */}
         <div className="w-full px-4 md:px-[72px] flex flex-col gap-6 z-10">
           <div className="flex flex-col mt-10 gap-6 w-full text-center mb-12">
-            <h1 className="text-[#1E1E1E] mb-3">
+            <h1 className="text-[#1E1E1E] leading-[1.0] mb-3">
               India's H-Index
               <br />
               Leaderboard Portal
@@ -25,18 +27,22 @@ export default function HomePage() {
 
             <p className="p1 text-[#5C5C5C] mb-2">
               NationCite is India’s national research visibility and H-Index
-              analytics platform bringing transparent rankings, <br /> verified
-              researcher profiles, and institution-level intelligence powered by
-              open and licensed global data sources.
+              analytics platform
             </p>
 
             <div className="flex flex-wrap justify-center gap-4 mt-2">
-              <button className="bg-[#FF7A00] text-white px-6 py-2.5 rounded-full font-medium transition-colors shadow-lg shadow-orange-200/50">
-                CTA Button
-              </button>
-              <button className="bg-white text-[#1E1E1E] border border-[#E0E0E1] px-6 py-2.5 rounded-full font-medium transition-colors">
-                CTA Button
-              </button>
+              <Link
+                href="/leaderboard"
+                className="bg-[#FF7A00] text-white px-6 py-2.5 rounded-full font-medium transition-colors shadow-lg shadow-orange-200/50 hover:bg-[#ff8c1a]"
+              >
+                Access Leaderboard
+              </Link>
+              <Link
+                href="/methodology"
+                className="bg-white text-[#1E1E1E] border border-[#E0E0E1] px-6 py-2.5 rounded-full font-medium transition-colors hover:bg-gray-50"
+              >
+                View Methodology
+              </Link>
             </div>
 
             <div className="flex items-center justify-center gap-3 mt-4  px-4 py-1  border-white/60 w-fit mx-auto">

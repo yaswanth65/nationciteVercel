@@ -11,7 +11,7 @@ This document provides a comprehensive audit of typography usage across all page
 ### Heading 1 - H1
 
 - **Font Size:** 64px (Desktop) / 36px (Mobile)
-- **Line Height:** 76px (Desktop) / 44px (Mobile)
+- **Line Height:** 120px (Desktop) / 44px (Mobile)
 - **Font Weight:** 600
 - **Where to Use:** Hero Sections
 - **CSS Class:** `h1` or `<h1>` tag

@@ -1,45 +1,34 @@
 "use client";
 
 import React from "react";
+import "./pricing-style.css";
 import { Check } from "lucide-react";
 import PricingSection from "@/components/site/PricingSection";
 import FAQSection from "@/components/site/FAQSection";
 import LeaderboardFinalCTA from "../leaderboard/components/LeaderboardFinalCTA";
 import PricingMidCTA from "@/components/site/PricingMidCTA";
+import FinalCTA from "@/components/site/FinalCTA";
 
 export default function PricingPage() {
   return (
     <div className="bg-white font-sans">
       {/* Hero / Pricing Section */}
-      <section className="w-full bg-linear-to-b from-[#FFF5EE] via-[#FFE4C8] to-[#f8f7f7]">
-        <div className="w-full px-4 md:px-[76px] pt-20 md:pt-30 pb-0 flex flex-col items-center justify-center">
-          <span className="text-sm font-medium text-[#1E1E1E] mb-3">
-            Lorem ipsum
-          </span>
-          <h4 className=" leading-[1.2] font-bold text-[#1E1E1E] text-center mb-1 text-3xl md:text-[40px]">
-            Lorem ipsum doloe <br />
-            self amet consectetyr alit
-          </h4>
-          <p className="text-[#5C5C5C] text-center max-w-[600px] leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-        </div>
-        <PricingSection className="bg-transparent pt-0" />
+      <section className="w-full bg-linear-to-b from-[#FFF5EE] via-[#FFE4C8] to-[#f8f7f7] pricing-bg">
+        <PricingSection className="pt-30 bg-transparent pt-0" />
       </section>
 
       {/* Comparison Tables Section */}
-      <section className="w-full pb-12 md:pb-20 px-4 md:px-[76px]">
-        <div className="w-full space-y-12 md:space-y-16">
+      <section className="w-full pb-12 md:pb-20 px-4 md:px-[120px]">
+        <div className="w-full space-y-4 md:space-y-5">
           {/* Table 1: Overview & Pricing */}
           <div>
-            <h4 className="text-[#FF7A00]  mb-6 text-lg">
+            <h4 className="text-[#1E1E1E] font-semibold !mb-6 text-lg">
               Overview & Pricing
             </h4>
             <div className="border border-gray-200 rounded-2xl overflow-hidden">
               <div className="overflow-x-auto">
                 <div className="min-w-[800px]">
-                  <div className="grid grid-cols-4 bg-gray-50 p-4 border-b border-gray-200 font-medium text-sm text-gray-500">
+                  <div className="grid grid-cols-4 bg-gray-50 p-3 border-b border-gray-200 font-semibold text-sm text-[#1E1E1E]">
                     <div className="sticky left-0 bg-gray-50 z-10">Plan</div>
                     <div>Price</div>
                     <div>Audience</div>
@@ -172,13 +161,13 @@ export default function PricingPage() {
 
           {/* Table 6: Add-ons */}
           <div>
-            <h4 className="text-[#FF7A00]  mb-6 text-lg">
+            <h4 className="text-[#1E1E1E] font-semibold !mb-6 text-lg">
               Add-ons (Optional for all)
             </h4>
             <div className="border border-gray-200 rounded-2xl overflow-hidden max-w-2xl">
               <div className="overflow-x-auto">
                 <div className="w-full min-w-[300px]">
-                  <div className="grid grid-cols-2 bg-gray-50 p-4 border-b border-gray-200 font-medium text-sm text-gray-500">
+                  <div className="grid grid-cols-2 bg-gray-50 p-3 border-b border-gray-200 font-semibold text-sm text-[#1E1E1E]">
                     <div>Add-On</div>
                     <div>Price</div>
                   </div>
@@ -222,10 +211,9 @@ export default function PricingPage() {
         tempor incididunt ut labore et dolore magna aliqua.
       </FAQSection>
 
-      <PricingMidCTA />
 
       {/* Bottom CTA */}
-      <LeaderboardFinalCTA />
+      <FinalCTA/>
     </div>
   );
 }
@@ -241,11 +229,11 @@ function ComparisonTable({
 }) {
   return (
     <div>
-      <h4 className="text-[#FF7A00]  mb-6 text-lg">{title}</h4>
+      <h4 className="text-[#1E1E1E] font-semibold !mb-6 text-lg">{title}</h4>
       <div className="border border-gray-200 rounded-2xl overflow-hidden">
         <div className="overflow-x-auto">
           <div className="min-w-[800px]">
-            <div className="grid grid-cols-4 bg-gray-50 p-4 border-b border-gray-200 font-medium text-sm text-gray-500">
+            <div className="grid grid-cols-4 bg-gray-50 p-3 border-b border-gray-200 font-semibold text-sm text-[#1E1E1E]">
               {headers.map((header, i) => (
                 <div
                   key={i}
@@ -287,6 +275,7 @@ function ComparisonTable({
           </div>
         </div>
       </div>
+
     </div>
   );
 }

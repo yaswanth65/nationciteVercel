@@ -23,26 +23,11 @@ export default function Footer() {
         <div className="flex flex-col lg:flex-row justify-between items-start gap-12 lg:gap-4 mb-10 md:mb-16">
           {/* Logo Section (Left) */}
           <div className="lg:w-1/3">
-            <div className="flex items-center gap-2 text-xl font-bold tracking-wider">
-              {/* Star Icon */}
-              <svg
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="text-white"
-              >
-                <path
-                  d="M12 2L14.4 9.6H22L16 14.4L18.4 22L12 17.6L5.6 22L8 14.4L2 9.6H9.6L12 2Z"
-                  fill="currentColor"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                  strokeLinejoin="round"
-                />
-              </svg>
-              <span>NATIONCITE</span>
-            </div>
+            <img
+              src="/logos/pcLogo.png"
+              alt="NationCite"
+              className="h-8 md:h-10 w-auto"
+            />
           </div>
 
           {/* Navigation & Socials Container (Right) */}
@@ -186,7 +171,7 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800/60 pt-8 flex flex-col-reverse md:flex-row justify-between items-center gap-6 md:gap-4 text-center md:text-left">
-          <p className="text-gray-400 text-sm">© Copyright Pomacrea 2024</p>
+          <p className="text-gray-400 text-sm">© Copyright NationCite 2024</p>
           <div className="flex flex-wrap justify-center gap-4 md:gap-8">
             <a
               href="/privacy"

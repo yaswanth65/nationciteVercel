@@ -2,7 +2,7 @@ import React from "react";
 
 export default function RightCard() {
   return (
-    <section className="w-full py-12 md:py-16 bg-white px-4 md:px-[76px]">
+    <section className="w-full py-12 md:py-16 bg-white px-4 md:px-[120px]">
       <div className="w-full bg-[#FFF9F5] rounded-[32px] p-6 md:p-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 ">
           {/* Left Column: Text Content */}

@@ -3,14 +3,14 @@ import { Instagram, Twitter, Youtube, X } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#050505] text-white pt-12 md:pt-20 pb-8 font-sans site-footer">
-      <div className="max-w-7xl mx-auto px-4 md:px-[108px]">
+    <footer className="bg-[#050505] text-white pt-12 md:pt-20 pb-8 font-sans site-footer w-full">
+      <div className="w-full mx-auto px-[120px]">
         {/* Top CTA Section */}
         <div className="flex flex-col items-center text-center mb-10 md:mb-16">
-          <h2 className="text-3xl md:text-5xl font-medium mb-4 text-white tracking-tight">
+          <h2 className="text-3xl md:text-5xl mb-4 text-slate-900 tracking-tight">
             Start your Lorem ipsum Today
           </h2>
-          <p className="text-gray-400 text-sm md:text-base max-w-lg leading-relaxed">
+          <p className="text-slate-700 text-sm md:text-base max-w-lg leading-relaxed">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
@@ -34,91 +34,85 @@ export default function Footer() {
           <div className="flex flex-wrap lg:flex-nowrap gap-10 lg:gap-20 w-full lg:w-auto justify-between lg:justify-end">
             {/* Company Column */}
             <div className="flex flex-col min-w-[140px]">
-              <h3 className="font-semibold text-white mb-6">Company</h3>
+              <h3 className="text-slate-900 mb-6">Company</h3>
               <div className="flex flex-col gap-4">
                 <a
-                  href="/mission"
-                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                  href="/about"
+                  className="text-slate-700 hover:text-slate-900 transition-colors text-sm"
                 >
-                  Our Mission
+                  About
                 </a>
                 <a
-                  href="/vision"
-                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                  href="/methodology"
+                  className="text-slate-700 hover:text-slate-900 transition-colors text-sm"
                 >
-                  Our Vision
+                  Methodology
                 </a>
                 <a
-                  href="/story"
-                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                  href="/blog"
+                  className="text-slate-700 hover:text-slate-900 transition-colors text-sm"
                 >
-                  Our Story
+                  Blogs
                 </a>
                 <a
-                  href="/team"
-                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                  href="/contact"
+                  className="text-slate-700 hover:text-slate-900 transition-colors text-sm"
                 >
-                  Meet Our Team
+                  Contact
                 </a>
               </div>
             </div>
 
-            {/* Our Solutions Column */}
+            {/* Leaderboards Column */}
             <div className="flex flex-col min-w-[140px]">
-              <h3 className="font-semibold text-white mb-6">Our Solutions</h3>
+              <h3 className="text-slate-900 mb-6">Leaderboards</h3>
               <div className="flex flex-col gap-4">
                 <a
-                  href="/time"
-                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                  href="/leaderboard/scholars"
+                  className="text-slate-700 hover:text-slate-900 transition-colors text-sm"
                 >
-                  Time Management
+                  Researchers
                 </a>
                 <a
-                  href="/productivity"
-                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                  href="/leaderboard/universities"
+                  className="text-slate-700 hover:text-slate-900 transition-colors text-sm"
                 >
-                  Productivity Enhancement
+                  Universities
                 </a>
                 <a
-                  href="/collaboration"
-                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                  href="/leaderboard/doctors"
+                  className="text-slate-700 hover:text-slate-900 transition-colors text-sm"
                 >
-                  Remote Collaboration
-                </a>
-                <a
-                  href="/tracking"
-                  className="text-gray-400 hover:text-white transition-colors text-sm"
-                >
-                  Progress Tracking
+                  Medical Professionals
                 </a>
               </div>
             </div>
 
             {/* Resources Column */}
             <div className="flex flex-col min-w-[140px]">
-              <h3 className="font-semibold text-white mb-6">Resources</h3>
+              <h3 className="text-slate-900 mb-6">Resources</h3>
               <div className="flex flex-col gap-4">
                 <a
                   href="/blog"
-                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                  className="text-slate-700 hover:text-slate-900 transition-colors text-sm"
                 >
                   Blog
                 </a>
                 <a
-                  href="/cases"
-                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                  href="/contact"
+                  className="text-slate-700 hover:text-slate-900 transition-colors text-sm"
                 >
                   Case Studies
                 </a>
                 <a
-                  href="/whitepapers"
-                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                  href="/contact"
+                  className="text-slate-700 hover:text-slate-900 transition-colors text-sm"
                 >
                   Whitepapers
                 </a>
                 <a
-                  href="/ebooks"
-                  className="text-gray-400 hover:text-white transition-colors text-sm"
+                  href="/contact"
+                  className="text-slate-700 hover:text-slate-900 transition-colors text-sm"
                 >
                   eBooks
                 </a>
@@ -171,23 +165,23 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-800/60 pt-8 flex flex-col-reverse md:flex-row justify-between items-center gap-6 md:gap-4 text-center md:text-left">
-          <p className="text-gray-400 text-sm">© Copyright NationCite 2024</p>
+          <p className="text-slate-700 text-sm">© Copyright NationCite 2025</p>
           <div className="flex flex-wrap justify-center gap-4 md:gap-8">
             <a
               href="/privacy"
-              className="text-gray-400 hover:text-white transition-colors text-sm"
+              className="text-slate-700 hover:text-slate-900 transition-colors text-sm"
             >
               Privacy Policy
             </a>
             <a
               href="/legal"
-              className="text-gray-400 hover:text-white transition-colors text-sm"
+              className="text-slate-700 hover:text-slate-900 transition-colors text-sm"
             >
               Legal
             </a>
             <a
               href="/terms"
-              className="text-gray-400 hover:text-white transition-colors text-sm"
+              className="text-slate-700 hover:text-slate-900 transition-colors text-sm"
             >
               Term of Services
             </a>

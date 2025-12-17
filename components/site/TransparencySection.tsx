@@ -17,7 +17,10 @@ export default function TransparencySection() {
               is source-labeled, auditable, and continuously updated.
             </p>
           </div>
-          <button className="bg-[#FF7A00] text-white px-4 py-2 rounded-xl font-medium hover:bg-[#e66e00] transition-colors md:-mt-3 md:self-end w-auto">
+          <button
+            className="bg-[#FF7A00] text-white px-4 py-2 rounded-xl font-medium hover:bg-[#e66e00] transition-colors md:-mt-3 md:self-end w-auto"
+            style={{ fontFamily: "var(--font-inter)" }}
+          >
             View Full Methodology
           </button>
         </div>
@@ -41,10 +44,10 @@ export default function TransparencySection() {
               key={i}
               className="bg-[#F5F5F5] p-6 md:p-10 rounded-2xl min-h-[300px] md:min-h-[450px] flex flex-col justify-end transparency-card"
             >
-              <h4 className="text-[#1E1E1E] mb-4 md:mb-1 text-xl md:text-2xl">
+              <h4 className="text-[#1E1E1E]  mb-4 md:mb-1 text-xl md:text-2xl">
                 {item.title}
               </h4>
-              <p className="p3 text-[#5C5C5C]">{item.desc}</p>
+              <p className="p3 pt-2 text-[#5C5C5C]">{item.desc}</p>
             </div>
           ))}
         </div>

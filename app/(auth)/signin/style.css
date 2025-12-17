@@ -1,222 +1,265 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    margin: 0;
-    padding: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        sans-serif;
-    background: #ffffff;
-    color: #111827;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  background: #ffffff;
+  color: #111827;
+}
+
+/* Navbar */
+.auth-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 72px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 120px;
+  z-index: 1000;
+}
+
+.auth-logo img {
+  height: 32px;
+  width: auto;
+}
+
+.auth-nav-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.auth-nav-text {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.auth-nav-link {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ff7a00;
+  text-decoration: none;
+  padding: 8px 20px;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.auth-nav-link:hover {
+  background: #fff7ed;
 }
 
 .page {
-    display: flex;
-    min-height: 100vh;
+  display: flex;
+  height: calc(100vh - 72px);
+  margin-top: 72px;
 }
 
 .sidebar {
-    width: 450px;
-    background: #f3f4f6;
-    padding: 24px;
-    display: flex;
-    align-items: flex-start;
-}
-
-.logo {
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    font-size: 14px;
+  width: 450px;
+  background: #f3f4f6;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .content {
-    flex: 1;
-    padding: 100px 130px;
+  flex: 1;
+  padding: 60px 120px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  overflow-y: auto;
 }
 
 .auth-content {
-    padding-left: 30px;
+  padding-left: 30px;
 }
 
 .title {
-    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 42px;
-    line-height: 45px;
-    letter-spacing: -0.05em;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 42px;
+  line-height: 45px;
+  letter-spacing: -0.05em;
 }
 
-
 .subtitle {
-    margin-top: 10px;
-    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0;
-    color: #717784;
+  margin-top: 10px;
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #717784;
 }
 
 .card-list {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    border-radius: 16px;
-    padding: 24px 16px;
-    background-color: #ff8d281a;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 16px;
+  padding: 24px 16px;
+  background-color: #ff8d281a;
 }
 
 .auth-content1 {
-    padding-left: 30px;
+  padding-left: 30px;
 }
 
 .role-card {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    padding: 14px 18px;
-    margin-bottom: 12px;
-    border-radius: 16px;
-    border: 1px solid #fde4ca;
-    background: #ffffff;
-    cursor: pointer;
-    text-align: left;
-    outline: none;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  border-radius: 16px;
+  border: 1px solid #fde4ca;
+  background: #ffffff;
+  cursor: pointer;
+  text-align: left;
+  outline: none;
 }
 
 .role-card:hover {
-    box-shadow: 0 8px 18px rgba(15, 23, 42, 0.08);
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.08);
 }
 
 .role-thumb {
-    width: 64px;
-    height: 48px;
-    border-radius: 12px;
-    background: #e5e7eb;
-    margin-right: 14px;
+  width: 64px;
+  height: 48px;
+  border-radius: 12px;
+  background: #e5e7eb;
+  margin-right: 14px;
 }
 
 .role-text {
-    flex: 1;
+  flex: 1;
 }
 
 .role-title {
-    font-weight: 600;
-    margin-bottom: 4px;
+  font-weight: 600;
+  margin-bottom: 4px;
 }
 
 .role-desc {
-    font-size: 12px;
-    color: #6b7280;
+  font-size: 12px;
+  color: #6b7280;
 }
 
 .foot-note {
-    margin-top: 32px;
-    font-size: 12px;
-    color: #4b5563;
+  margin-top: 32px;
+  font-size: 12px;
+  color: #4b5563;
 }
 
 /* Auth form */
 .auth-form {
-    width: 100%;
-    margin-top: 30px;
-    max-width: 360px;
+  width: 100%;
+  margin-top: 30px;
+  max-width: 360px;
 }
 
 .field {
-    display: block;
-    margin-bottom: 18px;
+  display: block;
+  margin-bottom: 18px;
 }
 
 .field-label {
-    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 18px;
-    letter-spacing: 0;
-    color: #717784;
-    margin-bottom: 5px;
-
+  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0;
+  color: #717784;
+  margin-bottom: 5px;
 }
 
-input[type='email'],
-input[type='password'] {
-    width: 100%;
-    padding: 10px 12px;
-    border-radius: 10px;
-    border: 1px solid #d1d5db;
-    font-size: 14px;
-    margin-top: 7px;
-
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+  margin-top: 7px;
 }
 
-input[type='email']:focus,
-input[type='password']:focus {
-    outline: none;
-    border-color: #fb923c;
-    box-shadow: 0 0 0 1px #fed7aa;
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: #fb923c;
+  box-shadow: 0 0 0 1px #fed7aa;
 }
 
 .primary-btn {
-    width: 100%;
-    padding: 10px 14px;
-    border-radius: 10px;
-    border: none;
-    background: #fb923c;
-    color: #ffffff;
-    margin-top: 4px;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0;
-    vertical-align: middle;
+  width: 100%;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  background: #fb923c;
+  color: #ffffff;
+  margin-top: 4px;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  vertical-align: middle;
 }
 
 .primary-btn:hover {
-    background: #f97316;
+  background: #f97316;
 }
 
 .form-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-    font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 12px;
 }
 
 .remember input {
-    margin-right: 4px;
-    font-size: 14px;
+  margin-right: 4px;
+  font-size: 14px;
 }
 
 .remember {
-    font-size: 14px;
-
+  font-size: 14px;
 }
 
 .link-btn {
-    border: none;
-    background: none;
-    color: #f97316;
-    font-size: 14px;
-    cursor: pointer;
-    padding: 0;
-
+  border: none;
+  background: none;
+  color: #f97316;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
 }
 
 .bottom-text {
-    margin-top: 18px;
-    font-size: 14px;
+  margin-top: 18px;
+  font-size: 14px;
 }

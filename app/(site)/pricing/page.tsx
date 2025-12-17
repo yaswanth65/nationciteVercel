@@ -19,20 +19,18 @@ export default function PricingPage() {
 
       {/* Comparison Tables Section */}
       <section className="w-full pb-12 md:pb-20 px-4 md:px-[120px]">
-        <div className="w-full space-y-4 md:space-y-5">
+        <div className="w-full md:space-y-5">
           {/* Table 1: Overview & Pricing */}
           <div>
-            <h4 className="text-[#1E1E1E] font-semibold !mb-6 text-lg">
-              Overview & Pricing
-            </h4>
+            <h4 className="mb-5">Overview & Pricing</h4>
             <div className="border border-gray-200 rounded-2xl overflow-hidden">
               <div className="overflow-x-auto">
                 <div className="min-w-[800px]">
-                  <div className="grid grid-cols-4 bg-gray-50 p-3 border-b border-gray-200 font-semibold text-sm text-[#1E1E1E]">
-                    <div className="sticky left-0 bg-gray-50 z-10">Plan</div>
-                    <div>Price</div>
-                    <div>Audience</div>
-                    <div>Ideal For</div>
+                  <div className="grid grid-cols-4 bg-gray-50 p-3 border-b border-gray-200">
+                    <h5 className="sticky left-0 bg-gray-50 z-10">Plan</h5>
+                    <h5>Price</h5>
+                    <h5>Audience</h5>
+                    <h5>Ideal For</h5>
                   </div>
                   <div className="divide-y divide-gray-200">
                     {[
@@ -55,16 +53,11 @@ export default function PricingPage() {
                         "Medium to large institutions",
                       ],
                     ].map((row, i) => (
-                      <div
-                        key={i}
-                        className="grid grid-cols-4 p-4 text-sm text-[#1E1E1E]"
-                      >
-                        <div className="font-medium sticky left-0 bg-white z-10">
-                          {row[0]}
-                        </div>
-                        <div>{row[1]}</div>
-                        <div>{row[2]}</div>
-                        <div>{row[3]}</div>
+                      <div key={i} className="grid grid-cols-4 p-4">
+                        <p className="sticky left-0 bg-white z-10">{row[0]}</p>
+                        <p>{row[1]}</p>
+                        <p>{row[2]}</p>
+                        <p>{row[3]}</p>
                       </div>
                     ))}
                   </div>
@@ -161,15 +154,13 @@ export default function PricingPage() {
 
           {/* Table 6: Add-ons */}
           <div>
-            <h4 className="text-[#1E1E1E] font-semibold !mb-6 text-lg">
-              Add-ons (Optional for all)
-            </h4>
+            <h4 className="mb-5">Add-ons (Optional for all)</h4>
             <div className="border border-gray-200 rounded-2xl overflow-hidden max-w-2xl">
               <div className="overflow-x-auto">
                 <div className="w-full min-w-[300px]">
-                  <div className="grid grid-cols-2 bg-gray-50 p-3 border-b border-gray-200 font-semibold text-sm text-[#1E1E1E]">
-                    <div>Add-On</div>
-                    <div>Price</div>
+                  <div className="grid grid-cols-2 bg-gray-50 p-3 border-b border-gray-200">
+                    <h5>Add-On</h5>
+                    <h5>Price</h5>
                   </div>
                   <div className="divide-y divide-gray-200">
                     {[
@@ -179,12 +170,9 @@ export default function PricingPage() {
                       ["Premium API access", "₹1,499/year"],
                       ["White-labeled analytics", "Enterprise only"],
                     ].map((row, i) => (
-                      <div
-                        key={i}
-                        className="grid grid-cols-2 p-4 text-sm text-[#1E1E1E]"
-                      >
-                        <div className="font-medium">{row[0]}</div>
-                        <div className="font-bold">{row[1]}</div>
+                      <div key={i} className="grid grid-cols-2 p-4">
+                        <p>{row[0]}</p>
+                        <p>{row[1]}</p>
                       </div>
                     ))}
                   </div>
@@ -211,9 +199,8 @@ export default function PricingPage() {
         tempor incididunt ut labore et dolore magna aliqua.
       </FAQSection>
 
-
       {/* Bottom CTA */}
-      <FinalCTA/>
+      <FinalCTA />
     </div>
   );
 }
@@ -229,30 +216,25 @@ function ComparisonTable({
 }) {
   return (
     <div>
-      <h4 className="text-[#1E1E1E] font-semibold !mb-6 text-lg">{title}</h4>
+      <h4 className="mb-5">{title}</h4>
       <div className="border border-gray-200 rounded-2xl overflow-hidden">
         <div className="overflow-x-auto">
           <div className="min-w-[800px]">
-            <div className="grid grid-cols-4 bg-gray-50 p-3 border-b border-gray-200 font-semibold text-sm text-[#1E1E1E]">
+            <div className="grid grid-cols-4 bg-gray-50 p-3 border-b border-gray-200">
               {headers.map((header, i) => (
-                <div
+                <h5
                   key={i}
                   className={i === 0 ? "sticky left-0 bg-gray-50 z-10" : ""}
                 >
                   {header}
-                </div>
+                </h5>
               ))}
             </div>
 
             <div className="divide-y divide-gray-200">
               {rows.map((row, i) => (
-                <div
-                  key={i}
-                  className="grid grid-cols-4 p-4 text-sm text-[#1E1E1E] items-center"
-                >
-                  <div className="font-medium sticky left-0 bg-white z-10">
-                    {row[0]}
-                  </div>
+                <div key={i} className="grid grid-cols-4 p-4 items-center">
+                  <p className="sticky left-0 bg-white z-10">{row[0]}</p>
                   {row.slice(1).map((cell, j) => (
                     <div key={j} className="flex items-center">
                       {cell === true ? (
@@ -263,9 +245,9 @@ function ComparisonTable({
                           />
                         </div>
                       ) : cell === "—" || cell === false ? (
-                        <span className="text-gray-300 font-medium">—</span>
+                        <p className="text-gray-300">—</p>
                       ) : (
-                        <span className="text-[#1E1E1E]">{cell}</span>
+                        <p>{cell}</p>
                       )}
                     </div>
                   ))}
@@ -275,7 +257,6 @@ function ComparisonTable({
           </div>
         </div>
       </div>
-
     </div>
   );
 }

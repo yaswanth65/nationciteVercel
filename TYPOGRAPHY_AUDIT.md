@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document provides a comprehensive audit of typography usage across all pages in the NationCite codebase, identifying where typography classes are used correctly and where deviations exist.
+This document provides a comprehensive audit of typography usage across all pages in the Nationcite codebase, identifying where typography classes are used correctly and where deviations exist.
 
 ---
 

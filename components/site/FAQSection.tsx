@@ -8,7 +8,7 @@ export default function FAQSection({
   title = "Everything You Need to Know About Us",
   kicker = "Know Nationcite",
   questions = [
-    "How does NationCite ensure project quality?",
+    "How does Nationcite ensure project quality?",
     "What industries do you specialize in?",
     "Can you handle enterprise-scale infrastructure?",
     "What is your engagement model?",

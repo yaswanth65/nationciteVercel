@@ -1,0 +1,91 @@
+.faqtitle {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 26px;
+    letter-spacing: -4%;
+    color: #FF8D28;
+    margin-bottom: 30px;
+}
+.page-bg {
+  background-image: url('/BG.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.pad-top{
+    padding-top:150px ;
+        padding-bottom:30px ;
+
+}
+.topsubtitle{
+     font-family: 'Inter', sans-serif;
+  font-weight: 500;       
+  font-size: 24px;
+  line-height: 24px;      
+  letter-spacing: -2px;
+  vertical-align: middle;
+   font-size:  24px;
+}
+.topbody p{
+    color: #5D5D65;
+     font-family: 'Inter', sans-serif;
+  font-weight: 400;       
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.04em;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.leading-tight {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;          
+  font-size: 32px;
+  line-height: 32px;          
+  letter-spacing: -2px;
+  vertical-align: middle;
+}
+.sub-listhead {
+    margin-top: 30px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;       
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: -0.04em;
+  color: #5D5D65;
+}
+
+.faqtitle {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 26px;
+  letter-spacing: -0.02em;
+  color: #ff8d28;
+  background: #fff7f0;
+  border-radius: 9999px;
+}
+
+h1 {
+  letter-spacing: -0.03em;
+}
+
+.title {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 600;
+  color: #111111;
+  letter-spacing: -0.03em;
+}
+
+.rightsubtitle {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #6b7280; 
+  max-width: 560px;
+}
+
+section {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+

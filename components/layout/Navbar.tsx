@@ -37,7 +37,7 @@ export default function Navbar() {
             <div className="md:hidden h-14 w-14 flex items-center justify-center">
               <Image
                 src="/logos/mobilelogo.png"
-                alt="NationCite Mobile Logo"
+                alt="Nationcite Mobile Logo"
                 width={56}
                 height={56}
                 priority
@@ -48,7 +48,7 @@ export default function Navbar() {
             <div className="hidden md:block h-12 w-48">
               <Image
                 src="/logos/pcLogo.png"
-                alt="NationCite Logo"
+                alt="Nationcite Logo"
                 height={48}
                 width={192}
                 priority

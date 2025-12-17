@@ -17,7 +17,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "NationCite - India's First H-index Leaderboard Portal",
+  title: "Nationcite - India's First H-index Leaderboard Portal",
   description:
     "India's First H-index Leaderboard Portal for researchers and academics",
   icons: {

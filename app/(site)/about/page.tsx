@@ -18,21 +18,26 @@ export default function AboutPage() {
   return (
     <main className="w-full bg-white">
       {/* Hero Section */}
-      <section className="w-full px-4 md:px-[120px] py-12 md:py-24 text-center page-bg">
-        <span className="text-[#F76A23] pt-6 font-medium mb-4 md:mb-6 block text-sm tracking-wide uppercase">
+      <section className="w-full px-4 md:px-[120px] h-screen flex flex-col items-center justify-center text-center page-bg">
+        <span className="text-[#F76A23] font-medium text-sm tracking-wide uppercase mb-4">
           About Nationcite
         </span>
-        <h1 className="mb-6 md:mb-8 text-3xl md:text-5xl leading-[1.0]">
-          Building the Digital Infrastructure for Tomorrow's Brands.
+        <h1 className="text-3xl md:text-5xl leading-tight  mb-6">
+         
+            Building The Digital  Infrastructure <br /> for Tomorrow's brands
+          
+          
         </h1>
-        <div className=" p-6 md:p-8 rounded-2xl inline-block mb-8 md:mb-10 ">
-          <p className="p1 text-[#5C5C5C]">
-            Nationcite is a technology-first company creating intelligent
-            digital solutions for businesses that want to scale with clarity,
-            speed, and long-term impact.
+        <div className="p-4 md:p-6 rounded-2xl inline-block mx-auto mb-8">
+          <p className="p1 text-[#5C5C5C]  text-lg">
+            <span className="block">
+              Nationcite builds intelligent digital <br /> infrastructure
+           
+              to help brands scale with clarity and speed.
+            </span>
           </p>
         </div>
-        <div className="flex justify-center">
+        <div>
           <PrimaryButton
             onClick={scrollToNextSection}
             className="bg-[#FF7A00] text-white px-8 w-auto md:px-16 md:w-[250px] py-4 rounded-full hover:bg-[#ff8d28] transition-colors"

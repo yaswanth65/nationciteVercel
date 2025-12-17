@@ -32,13 +32,13 @@ export default function ResearchIntelligence() {
             },
             {
               title:
-                "How to Claim & Verify Your Research Profile on NationCite",
+                "How to Claim & Verify Your Research Profile on Nationcite",
               desc: "Step-by-step guide for researchers to gain ownership and improve profile accuracy.",
             },
             {
               title:
-                "Preventing Metric Manipulation: Inside NationCite's Anti-Gaming System",
-              desc: "Preventing Metric Manipulation: Inside NationCite's Anti-Gaming System",
+                "Preventing Metric Manipulation: Inside Nationcite's Anti-Gaming System",
+              desc: "Preventing Metric Manipulation: Inside Nationcite's Anti-Gaming System",
             },
           ].map((item, i) => (
             <div

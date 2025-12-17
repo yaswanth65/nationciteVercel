@@ -2,11 +2,11 @@ import React from "react";
 
 export default function Thebigcard() {
   return (
-    <section className="w-full py-12 md:py-16 bg-white px-4 md:px-[120px]">
+    <section className="w-full py-8 md:py-12 bg-white px-4 md:px-[120px]">
       {/* Main Container Card - Cream Background */}
       <div className="w-full bg-[#FFF9F5] rounded-[32px] p-6 md:p-16">
         {/* Top Text Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start mb-8 md:mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10 items-start mb-8 md:mb-12">
           {/* Left Column: Headings */}
           <div>
             <span className="text-[#FF7A00] font-medium mb-4 md:mb-6 block text-sm tracking-wide uppercase">
